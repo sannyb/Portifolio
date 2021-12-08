@@ -1,1 +1,1 @@
-# This is portfolio website for Weball Technologies LTD PTY
+# This is portfolio website for Weball Technologies ltd(pty)
