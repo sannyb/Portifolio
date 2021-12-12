@@ -88,6 +88,10 @@ require_once "config_mogolo.php";
 </div>
 <header class="header" id="header">
   </header>
+  <div class="whatsaap">
+    <span class="notification" id="notification">1</span>
+    <a href="whatsapp://send?text=Hi, I have question!&phone=+27728108533"><i class="fa fa-whatsapp" id="whatsaap"></i></a>
+    </div>
 
 <div class="container">
 
@@ -371,7 +375,6 @@ require_once "config_mogolo.php";
   
 </section>
 <!-- services starts-->
-
 
 <div class="contact_details">
 <hr>

@@ -155,6 +155,44 @@ margin-left: 15px;
 }
 
 /*developer login style*/
+.whatsaap a i{
+    color:white;
+    background-color: green;
+    border-radius: 50%;
+    font-size: 35px;
+    padding: 8px;
+    width:50px;
+    height: 50%;
+    text-align: center;
+    display: none;
+    animation:fadeout 1s linear;
+}
+.whatsaap a{
+    text-decoration: none!important;
+}
+.whatsaap .notification{
+    background-color: red;
+    border-radius:50%;
+    position:absolute;
+    color:white;
+    font-size: 10px;
+    padding:5px;
+    top:0;
+    right:0px;
+    text-align: center;
+    display:none;
+    width:20px;
+    height:20px;
+    animation:fadeout 1s linear;
+}
+.whatsaap {
+    position:fixed;
+    bottom:5px;
+    right:3px;
+    z-index: 10;
+    width:auto;
+    
+}
 .dev_login{
     
     background-color:white;

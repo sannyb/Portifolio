@@ -105,6 +105,7 @@ function(){
 	slides();
 	setInterval(slides,10000);
 	setTimeout(loading,1000);
+	setTimeout(whatsap,5000);
 
 	
  }
@@ -277,8 +278,8 @@ for (i; i<3; i++){
 } 
 
 function animate(){
-	 view2(".project_img");
-	view2(".prices");view1(".button"); view1(".card_info");
+	 view1(".project_img");
+	view1(".prices");view1(".button"); view1(".card_info");
 
 }
 
@@ -359,6 +360,13 @@ $(window).scroll(function() {
 	}
   });
   //=====End====//
+  function whatsap(){
+	  document.getElementById("whatsaap").style.display="block";
+	  setTimeout(noti,2000);
+  }
+  function noti(){
+	document.getElementById("notification").style.display="block";
+  }
 
   
   
