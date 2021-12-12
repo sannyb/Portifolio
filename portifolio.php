@@ -15,6 +15,7 @@ require_once "config_mogolo.php";
             <link rel="shortcut icon" href="img/weball.PNG">
             <link href="css/desktop.css" rel="stylesheet" type ="text/css" />
             <link href="css/tablet.css" rel="stylesheet" type="text/css"  />
+            <link href="css/weball.css" rel="stylesheet" type="text/css"  />
             <link rel="stylesheet" type="text/css" href="font/css/font-awesome.css" />
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
                          
@@ -35,12 +36,14 @@ require_once "config_mogolo.php";
 
 </head>
 
-<body  onload="portfolio()">
+<body  onload="portfolio()" onscroll="animate()">
 
 <div class="menu-drop-down">
 <div class="menu-cancel"> &times; </div>
+<div class="search"><select id="search" name="categories"><option value="all">All</option> <option value="Hosting">Hosting</option> <option value="Design">Hosting</option> <option value="maintainance">Maintainance</option></select>
+<input type="text" name="search_value" id="search_value" placeholder="search our site" /><i class="fa fa-search"></i> </div>
 <hr>
-<div class="menu-content"> <div class="menu-icon"><i class="fa fa-home"></i></div><div class="manu_link"><a href="portifolio.php">Home</a></div></div>
+<div class="menu-content"> <div class="menu-icon"><i class="fa fa-home"></i></div><div class="manu_link"><a href="#header">Home</a></div></div>
 <hr>
 <div class="menu-content"><div  class="menu-icon"><i class="fa fa-book"></i></div><div class="manu_link"><a  href="#about">About Us</a></div></div>
 <hr>
@@ -49,30 +52,33 @@ require_once "config_mogolo.php";
 <div class="menu-content"><div  class="menu-icon"> <i class="fa fa-phone"></i></div><div class="manu_link"><a  href="#sendmessage"> Contact</a></div></div>
 <hr>
 <div class="menu-content"><div  class="menu-icon"> <i class="fa fa-cogs"></i></div><div class="manu_link"><a  href="#services" >Services</a></div></div>
-
 <hr>
 
-
 </div>
+<!--Start of loader-->
+<div class="loading" id="loading">
+  <div class="top"></div>
+  <div class="bottom"></div>
+  <div class="left"></div>
+  <div class="right"></div>
+  <img src="img/loader.jpg" alt="loader">
+  </div>
+<!--End of loader-->
 
 
-<div id="all-content" >
+<div id="all-content" style="display:none;" >
   
-  <div class="tablet_hide phone_hide d_menu"><a href="#services" >SERVICES</a> <span>|</span> 
+  <div class="tablet_hide phone_hide d_menu" ><a href="#services" >SERVICES</a> <span>|</span> 
     <a href="#projects" >PROJECTS</a> <span>|</span><a href="#sendmessage">CONTACT US</a><span>|</span><a href="#about" >ABOUT US</a></div>
-<!--
 
-<div class="task_bar" style="display: none;">
-
-<div class="welcome"> <span class="intro_first">Web-All</span>    Technologies</div>
-<div class="logo"><img src="img/weball.PNG"> </div>  
-
-	
+<div class="get_us"> 
+<a href="mailto:info@weball.co.za">info@weball.co.za</a>
+<a href=""> +27 (0)728108533</a>
 </div>
 
--->
-
-
+<div class="dev_login " >
+  <a href="#">Developer login</a>
+  </div> 
 
 
 <div class="desktop_hide menu-bar">
@@ -80,7 +86,8 @@ require_once "config_mogolo.php";
   <div class="bar"> </div>
   <div class="bar"> </div>
 </div>
-
+<header class="header" id="header">
+  </header>
 
 <div class="container">
 
@@ -164,173 +171,210 @@ require_once "config_mogolo.php";
   </div>
 <!-- Second slide end-->
 
+<!-- services starts-->
+<section class="services_section">
+  <h1> Services </h1>
+  <h2> GET PROFESSIONAL WEBSITE FROM AS LITTLE AS <b style="color:rgb(206, 73, 73)"> $50</b> </h2>
 <div class="webdev" >
-  <div class="services" id="services" onscroll="show1()">
+  <div class="services" id="services" onscroll="show1()" >
       <div class="services-slides">
           
-          <div  class="services-btn" onclick="current_slide(0)">Services</div>
-          <div class="offset phone_hide tablet_hide" onclick="current_slide(1)">Our Work</div>
-          <div class="offset phone_hide tablet_hide" onclick="current_slide(2)">About us</div>
+          <div  class="services-btn" onclick="current_slide(0)">Static web</div>
+          <div class="offset phone_hide tablet_hide" onclick="current_slide(1)">Dynamic Web</div>
+          <div class="offset phone_hide tablet_hide" onclick="current_slide(2)">E-commerce</div>
       </div>
       <br class="phone_hide" >
       <br class="phone_hide">
       <br class="phone_hide">
       <!--<p  class="decoration" style="color:black; font-family:MyFont;"><strong>OUR AIM IS TO HELP AMBITOUS BUSINESS MAKE MORE 
         PROFIT BY BUILDING ONLINE PRESENCE, MANAGING WEB TRAFIC AND CONNECTING WITH CUSTOMERS 24/7 ONLINE</strong></p>-->
-        <div class="scroll"><img src="img/scroll.PNG"></div>
-        <p id="text_linear">
-          <span style="color:blue">WebAll</span> offer wide range of <strong>Websites</strong>, <strong>Web Applications</strong>,<strong>Desktop/Phone Applications</strong> and <strong>more</strong>.<br> We value our customers hence we rely on 
-          customers need of how the Website/Application should function
-      </p>
-      <p>We offer free hosting and free domain name</p>
-      <h3>Website Packages:</h3>
-      <div class="services1">
-      <div>
-        <p><strong>1.Static Website</strong></p>
+        <div class="scroll"><img src="img/scroll.PNG" alt="scrolling"></div>
+        <div class="text_style">
+          <b>
+         We are dedicated team of developers aimed to solved any Web problems</b>
+        </div>
+        <p>We design and develop from scratch</p>
+        <p> Our team also fix bugs in existing websites, or upgrade your existing website to new  design</p>
+
+      <h3>Website Package:</h3>
+     
+      <div class="first_services">
+        <p><strong style="color:black">1.Static Website</strong></p>
       <p>Static website we refering to small website with 1 - 50 pages 
-      it can include database, but is static site(only developer can modify it). Comes with Free domain and 
-      free hosting. <a href="#contact">Contact us</a> for more infomation
+      strictly no database.This package Comes with free domain valid for 1 year .
       </p>
+      <p>Get this package as little as <strong style="color:rgb(207, 64, 64)"> $50 once-off</strong>. We also provide you with maintainance at lower cost of $4/pm</p>
+    
+
         </div>
-        <div><p><strong>1.Dynamic Website</strong></p>
-        
-        <p>This  comes with CMS(content management System) and databases.
-          With free domain name and free hosting. This can be <span class="danger">Blog or Website. </span><br> To ensure that your customers browse safely we 
-          provide SSL certificate for your site. To make sure your customers 
-          information is secured.
-        </p>
-        </div>
-        <div id="ecommerce"><p><strong>3.E-commerce</strong></p>
-      <p>Take your Business to next level by bringing up online shopping.
-        we'll build e-commerce website, with SSL certificate, free hosting, 
-      free domain and with CMS, <a href="#contact">Contact us</a> for more infomation </p></div>
-
-      </div>
+        <p>For more infomation regarding this package contact us here </p>
+        <p><i class="fa fa-arrow-down"></i> </p>
+        <a  class="button" href="#contact">Contact us</a>
 
 
 
 
-      <p>All given projects will be completed within 30 days from effective day</p>
+
+      <p style="color:rgb(245, 183, 12)"> All given projects will be completed within 30 days from effective day</p>
       </div>
   <div class="btn-left" onclick="slide_change(-1)"><i class="fa fa-angle-left"></i></div><div class="btn-right" onclick="slide_change(1)"><i class="fa fa-angle-right"></i></div>
 </div>
 <div class="webdev" >
 
-<div class="services" onscroll="show2()">
-<div class="services-slides">
-<div class="offset phone_hide tablet_hide" onclick="current_slide(0)">Services</div>
-<div class="services-btn" onclick="current_slide(1)">Our Work</div>
-<div class="offset phone_hide tablet_hide" onclick="current_slide(2)">About us</div>
-</div>
-<br class="phone_hide">
-<br class="phone_hide">
-<br class="phone_hide">
-<div class="services2"  id="projects">
-<h3>Our Major Projects:</h3>
+<div class="services" onscroll="show2()" >
+    <div class="services-slides">
+        <div class="offset phone_hide tablet_hide" onclick="current_slide(0)">Static web</div>
+        <div class="services-btn" onclick="current_slide(1)">Dynamic Web</div>
+        <div class="offset phone_hide tablet_hide" onclick="current_slide(2)">E-commerce</div>
+    </div>
+    <br class="phone_hide">
+    <br class="phone_hide">
+    <br class="phone_hide">
+    <div class="text_style">
+      <b>
+    Do you have bugs on Your web app or is running slow?</b>
+    </div>
+    <p> We develop web app/sytems from scratch and  fix bugs in any existing website</p> 
+    <h3>Website Package:</h3>
+    <div class="first_services">
+      <p><strong style="color:black">2.Dynamic Website</strong></p>
+        <p>This is dynamic website which can be scrapping website or any website with dynamic content like school system.</p>
+         <p> This comes with 1-5 databases, 1-25 emails, free domain name for 1 year. Get this package as little as<strong style="color:rgb(207, 64, 64)"> $150 once-off</strong>
+        . This can be <span class="danger">Blog </span>, to ensure that your customers browse safely we 
+          provide SSL certificate for your site(https://...). We provide maintainance with additional charge of $10/pm
+        </p>
 
-<div class="Projects" >
-<div style="background-color: floralwhite;" >
-  <h4> Project no.1:School Website(MB Independent Academy)</h4>
-<img  src="img/Screenshot_20210520-173658.png" width="14%"> <img src="img/project1.png" width="50%">
-
-<div>
-
-
-  
-<em style="color:blue">" This website includes database, <span style="color:black">CMS( Content Management System)</span> and is responsive to all 
-  media devices(different screen sizes)"</em>
-<div type="button" style="margin-top: 1em;" class="button"><a href="http://www.mogolosecondaryschool.co.za">Visit Site+</a></div>
-</div>
-
-</div>
-</div>
-
-<div class="Projects" >
-  <div style="background-color: floralwhite;" >
-    <h4> Project no.2: Demo Online Shopping Website</h4>
-  <img src="img/ecommerce.png" width="14%"> <img src="img/ecommerce1.png" width="50%">
-  
-  <div>
-  
-  
-    
-  <em style="color:blue">" This website includes database, <span style="color:black">CMS( Content Management System)</span> and is responsive to all 
-    media devices(different screen sizes)"</em>
-  <div type="button" style="margin-top: 1em;" class="button"><a href="http://www.weball.co.za/Online/ecommerce/Joseph.php">Visit site+</a></div>
-  </div>
-  
-  </div>
-  </div>
-  
-
+    </div>
+    <p>For more infomation regarding this package contact us here </p>
+    <p><i class="fa fa-arrow-down"></i> </p>
+    <a  class="button" href="#contact">Contact us</a>
 </div>
 
-
-
-
-</div>
-<div class="btn-left" onclick="slide_change(-1)"><i class="fa fa-angle-left"></i></div><div class="btn-right" onclick="slide_change(1)"><i class="fa fa-angle-right"></i></div>
+    <div class="btn-left" onclick="slide_change(-1)"><i class="fa fa-angle-left"></i></div><div class="btn-right" onclick="slide_change(1)"><i class="fa fa-angle-right"></i></div>
 </div>
 
 
 <div class="webdev" >
 
-<div class="services" id="about" onscroll="show2()">
-<div class="services-slides">
-  <div class="offset phone_hide tablet_hide"  onclick="current_slide(0)">Services</div>
-<div class="offset phone_hide tablet_hide" onclick="current_slide(1)">Our Work</div>
+<div class="services"  onscroll="show2()" >
+    <div class="services-slides">
+        <div class="offset phone_hide tablet_hide"  onclick="current_slide(0)">Static web</div>
+        <div class="offset phone_hide tablet_hide" onclick="current_slide(1)">Dynamic Web</div>
+        <div class="services-btn"  onclick="current_slide(2)">E-commerce</div>
+    </div>
 
-<div class="services-btn"  onclick="current_slide(2)">About us</div>
-</div>
-<br class="phone_hide">
-<br class="phone_hide" >
-<br class="phone_hide">
-<br class="phone_hide">
+    <br class="phone_hide">
+    <br class="phone_hide" >
+    <br class="phone_hide">
+    <br class="phone_hide">
 
-<div class="important-info">We specialize with Web Design, Web development and Android App Development ,  </div>
-
-<div class="prices" >
-  <div><strong>WebAll Technologies</strong> is an IT company founded by Belmiro Mohlala in 2020  and formalised in 2021<br>
-  it is registered under CIPC <span class="danger">Reg no:2021/549791/07.</span><br><strong>
-  WebAll</strong> focus on different fields of Programming, which are <br><ol><li><strong>Web development</strong>
-  </li><li><strong>Software development.</strong></li></ol>
-</div> 
-
-  <div><strong>Weball</strong> covers <span style="color:aqua; font-size:20px; font-weight:bold;">Graphic Design:</span>
-    <br><ol><li><strong>Logo Design</strong>
-    </li><li><strong>Video Edit</strong></li>
-  </li><li><strong>etc...</strong></li></ol>
+ 
+<div id="ecommerce"><p><strong>3.E-commerce Website</strong></p>
+      <p>Take your Business to next level by bringing up online shopping.</p>
 </div>
 
-  <div>Our offices are located at:
-    <ul>
-<li>Limpopo</li>
-<li>Burgersfor</li>
-<li>Riba Cross</li>
-<li>P.O Box 1150</li>
-    </ul> </div>
-    <p>Contact us for more information:</p>
-    <p type="button" class="button"><a href="#sendmessage">Contact</a></p>
+<div class="first_services">
+    <p>Get an ecommerce website and start selling online</p>
+     <p> This comes with 1-5 databases, 1-25 emails, free domain name for 1 year. Get this package as little as<strong style="color:rgb(207, 64, 64)"> $200 once-off</strong></p>
+    <p>To ensure that your customers browse safely we provide SSL certificate for your site(https://...). We provide maintainance with additional charge of $10/pm </p>
+</div>
+
+<p>For more infomation regarding this package contact us here </p>
+<p><i class="fa fa-arrow-down"></i> </p>
+<a  class="button" href="#contact">Contact us</a>
+
+    <div class="btn-left"><i class="fa fa-angle-left" onclick="slide_change(-1)"></i></div><div class="btn-right"><i class="fa fa-angle-right" onclick="slide_change(1)"></i></div>
+
+</div>
+</div>
+
+<div>
+  <h3>Our Major Projects:</h3>
+  
+  <div class="Projects" id="Projects">
+    
+  <div style="background-color: floralwhite;" >
+    <h4> Project 1:Bitcoin Investing platform(Smart investa )</h4>
+    <p>Our team is known of creating fast scalable and responsive websites, this is one of our work that we are proud of. It is 
+      Bitcoin Investing platform that enables people all over the world to invest in Bitcoin with secure and safe platform. </p>
+      <p> Our team does not rely on certain programming language, we use the language that is suitable to complete the project</p>
+<div class="p_img"><img class="project_img" id="first_p" src="img/project2.png" /> <img class="project_img" src="img/project1.png" /> </div>
+  
+  <div>
+  
+  
+    
+  <p > This website includes database, and is responsive to all 
+    media devices(different screen sizes)</p>
+  <div ><a   class="button" href="https://www.smartinvesta.co.za">Visit Site+</a></div>
+  </div>
+  
+  </div>
+  </div>
+  <hr>
+  
+  <div class="Projects" >
+    <div style="background-color: floralwhite;" >
+      <h4> Project 2: E-commerce (Online Shopping Website)</h4>
+      <p>This is the project our team is curretly busy with, we just got started with this project and is one of the
+        most interesting projects since Ecommerce is growing exponetially
+      </p>
+      <div class="p_img"> <img class="project_img" id="first_p" src="img/ecommerce.png" > <img  class="project_img"  src="img/ecommerce1.png" ></div>
+    
+    <div>
+    
+    
+      
+    <p > This website includes database,CMS( Content Management System) and is responsive to all 
+      media devices(different screen sizes)</p>
+    <div ><a class="button" href="http://www.weball.co.za/Online/ecommerce/Joseph.php">Visit site+</a></div>
+    </div>
+    
+    </div>
+    </div>
+    
+</div>
+<div id="about" class="about"> 
+<h3> About Us </h3>  
+  <div class="important-info">We specialize with Web Design, Web development and Android App Development ,  </div>
+  
+  <div class="prices" >
+    <div><strong>WebAll Technologies</strong> is an IT company founded by Belmiro Mohlala in 2020  and formalised in 2021<br>
+    it is registered under CIPC <span class="danger">Reg no:2021/549791/07.</span><br><strong>
+    WebAll</strong> focus on different fields of Programming, which are <br><ol><li><strong>Web development</strong>
+    </li><li><strong>Software development.</strong></li></ol>
+  </div> 
+  
+    <div><strong>Weball</strong> covers <span style="color:aqua; font-size:20px; font-weight:bold;">Graphic Design:</span>
+      <br><ol><li><strong>Logo Design</strong>
+      </li><li><strong>Video Edit</strong></li>
+    </li><li><strong>etc...</strong></li></ol>
+  </div>
+  
+   
+      <p>Contact us for more information:</p>
+      <p  ><a class="button" href="#sendmessage">Contact</a></p>
+    </div>
+  
+  <div class="prices">
+    
+    <p>In <strong>WebAll Technologies</strong> we have skilled developers who can take your Business to another level.<br>
+   </p>
+    
+    
+  </div>
+  
+  
+  
   </div>
 
-<div class="prices">
   
-  <p>In <strong>WebAll Technologies</strong> we have skilled developers who can take your Business to another level.<br>
-  We target  mostly small companies that are still under development and assist them to reach Customers easily by taking their 
-Business to online, where it can been searched by 1000+ people</p>
-  
-  
-</div>
+</section>
+<!-- services starts-->
 
-
-
-</div>
-<div class="btn-left"><i class="fa fa-angle-left" onclick="slide_change(-1)"></i></div><div class="btn-right"><i class="fa fa-angle-right" onclick="slide_change(1)"></i></div>
-
-</div>
 
 <div class="contact_details">
-
+<hr>
   <div class="contact_details1">
     <h3>More Info </h3>
     <div class="contact_details2">
@@ -351,7 +395,7 @@ Business to online, where it can been searched by 1000+ people</p>
       </div>
       <div id="sendmessage" class="sendmessage"><em>SEND MESSAGE</em>
         <br>
-      <form method="POST" action="">
+      <form method="POST" action="" id="contact">
         <p><input  type="text" name="email1" placeholder="Enter Your Email" required></p>
       <textarea class="tablet_hide" cols="37" rows="4" name="message1" placeholder="Type your message here" ></textarea>
         <textarea class="desktop_hide phone_hide" cols="60" rows="8" name="message2" placeholder="Type your message here" ></textarea>

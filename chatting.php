@@ -58,7 +58,7 @@ $conn->close();}
            <link href="style/mogolo_style1.css" rel="stylesheet" type="text/css">
            <link rel="stylesheet" type="text/css" href="font/css/font-awesome.css"/>
            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
-            <link rel="icon" href="pics/avater.jpg" type=""image/icon type>
+            <link rel="icon" href="pics/avater.jpg" type="image/icon type">
 
 <meta name="description"
 name="login as stuff member to acess all features"/>

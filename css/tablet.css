@@ -3,7 +3,7 @@ html{
 	scroll-behavior:smooth;
 }
 body{
-	background-color:rgba(0,0,0,0.8);
+	background-color:white;
 }
 @media only screen and (min-width:600px) and (max-width:992px){
 
@@ -109,7 +109,8 @@ body{
 		position:fixed;
 		top:1.5em;
 		left:1%;
-		z-index:1;}
+		z-index:10;
+	}
 		
 	.bar{
 		margin:5px;
@@ -137,6 +138,33 @@ body{
 		background-image: linear-gradient(white,grey);
 		box-shadow:10px 0px 10px #cccccc;
 	}
+	
+.menu-drop-down .search{
+	display:flex;
+	flex-direction:row;
+	width:18em;
+	margin-top: 2em;
+	margin-left: auto;
+	margin-right: auto;
+	
+}
+.search input{
+	width:10em;
+}
+
+.search select{
+	width:6em;
+}
+
+.search i{
+	background-color:rgb(19, 167, 167);
+	color: white;
+	padding:3px;
+}
+
+.search i{
+	width:8em;
+}
 	.menu-content  div a{
 		color:black;
 		padding:3px;
@@ -261,27 +289,29 @@ body{
 }
 	
 	.webdev{
+		padding:12px;
+	}
+	
+.header{
+    height:4em;
+	z-index: 1;
+}
+.services_section {
+	top:10em;
+	}
+	.contact_details{
 		width:100%;
 		position:relative;
 		margin: 0;
-		top:15em;
-		padding:12px;
-		animation:intro 3s;
-		-webkit-animation:intro 3s;
-		background-color:white;
-		animation:weball 1s;
-		-webkit-animation:weball 1s;
-	}
-	.contact_details{
-	
-		width:100%;
-		position:relative;
-	margin: 0;
-		top:14em;
+		top:8em;
 		background-color: white;
 		background-image: linear-gradient(white,white);
 		
 	}
+	
+.first_services, .first_services p{
+    color:black;
+}
 	.contact_details .contact_details1{
 		width:100%;
 		position:relative;
@@ -419,14 +449,28 @@ body{
 		overflow:scroll;
 	}
 	
-	/*
-	Hide scrolling bars for Chrome, safari and opera
+	
+	/*Hide scrolling bars for Chrome, safari and opera*/
 	.services::-webkit-scrollbar{display:none;}
-	hide scrolling for IE, Edge and Firefox 
+	/*hide scrolling for IE, Edge and Firefox */
 	.services{
 		-ms-overflow-style:none;
 		scrollbar-width:none;
-	}*/
+	}
+	
+/*developer login style*/
+.dev_login{
+    top:0px;
+    right:4px;
+    padding: 4px;
+	z-index: 10;
+	position:fixed;
+ 
+}
+.dev_login>a{
+    font-size: 20px;
+}
+/*End of developer login*/
 	
 	
 	.services-btn{
@@ -436,6 +480,21 @@ body{
 		text-align: center;	
 		
 	}
+	
+.get_us{
+    left: 5px;
+    top: 0em;
+	z-index: 10;
+
+}
+.get_us a{
+ font-size: 16px;
+}
+.services a{
+	padding:5px;
+	font-size: 18px;
+	font-weight: bold;
+}
 	.services-btn:hover{
 		opacity:0.6;
 	}
@@ -645,8 +704,26 @@ body{
 		width:100%;
 	}
 	.Projects div img{
-		 border:black solid 2px;
+		 border:black solid 0.5px;
 		margin:10px;
+		height: auto;
+	}
+	
+	
+	.Projects div .project_img{
+		width:70%;
+		align-items: center;
+		margin-left: auto;
+		margin-right: auto;
+	 }
+	 #first_p{
+		width:20%;
+	
+	 }
+	 
+	.p_img{
+	   width:90%;
+	   margin: auto;
 	}
 	.Projects div{
 	
@@ -654,7 +731,7 @@ body{
 	}
 	.Projects div img:hover{
 	
-		transform: scale(1.5);
+		transform: scale(1.05);
 	}
 	.services1 li{
 		text-align:left;
@@ -689,7 +766,7 @@ body{
 		
 	.menu-icon i{
 		
-		font-size: 2.5em;
+		font-size: 2em;
 		}
 		.menu-icon img:hover{
 			transform: scale(1.05);
@@ -715,31 +792,12 @@ body{
 	border: 0.5px solid gray;
 	padding: 3px;
 }
-	
-	.button a{
-		font-size: 18px;
-		border-radius: 2px;
-		background-color: rgb(216, 70, 70);
-		color:white;
-		text-shadow: 3px 3px 2px black;
-		padding: 10px;
-		text-decoration: none;
-	
-	}
-	.prices .button{
-		margin-bottom: 30px;
-	
-	}
-	
 	table{
 		margin-left: auto;
 		margin-right: auto;
 	}
 	
 	
-	.button:hover{
-		opacity: 0.5;
-	}
 	.text-danger{
 		color:red;
 	}

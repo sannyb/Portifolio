@@ -1,0 +1,241 @@
+/*loading*/
+.loading{
+    position:absolute;
+    top:50%;
+    left:45%;
+    width:10%;
+    height:4em;
+    margin:0px;
+    overflow:hidden;
+}
+.loading .left{
+    height:4em;
+    width:4px;
+    background-color: blue;
+    position:absolute;
+    top:0;
+    left:-4px;
+    animation:left 1s linear;
+    animation-delay: 1s;
+
+}
+
+.loading .right{
+    height:4em;
+    width:4px;
+    background-color: rgb(255, 94, 0);
+    position:absolute;
+    top:0;
+    right:-4px;
+
+}
+
+.loading .top{
+    height:4px;
+    width:100%;
+    background-color: rgb(255, 0, 0);
+    position:absolute;
+    top:0;
+    right:-4px;
+    animation:top 1s linear;
+
+}
+
+.loading .bottom{
+    height:4px;
+    width:100%;
+    background-color: rgb(255, 0, 0);
+    position:absolute;
+    bottom:-8px;
+    right:-4px;
+
+}
+.loading .right,.loading .left,.loading .top,.loading .bottom{
+    display:none;
+}
+.loading img{
+    width:100%;
+    height:4em;
+}
+@keyframes top{
+    from{
+right:-140px;
+    }
+    top{
+        right:-4px;
+
+    }
+    
+}
+
+@keyframes left{
+    from{
+top:-140px;
+    }
+    top{
+        top:0px;
+
+    }
+    
+}
+/*end of loading*/
+
+.services_section {
+background-color:white;
+position:relative;
+margin:0;
+}
+
+#all-content{
+	
+	margin:0;
+	padding:0;
+    background-color: transparent;
+}
+.header{
+    background-color:black;
+    position:fixed;
+    margin:0;
+    top:0;
+    width:100%;
+    display: none;
+}
+.text_style{
+    font-family:MyFont1;
+    color: rgb(224, 123, 6);
+}
+.get_us{
+    position:fixed;
+    display:flex;
+    flex-direction: row;
+	animation:fadeup 1s linear ;
+
+   
+}
+.get_us a{
+margin-left: 15px;
+ color: rgb(224, 123, 6)!important;
+ font-weight: bold;
+}
+.button{
+    color: white !important;;
+    border:1px white solid;
+    border-radius: 12px;
+    text-decoration: none;
+    background-image: linear-gradient(to right,rgb(77, 49, 49),rgba(212, 26, 26, 0.94),rgba(255, 0, 0, 0.94));
+}
+
+
+.button:hover{
+    color:white;
+    background-image: linear-gradient(to right,rgb(197, 38, 38),rgba(231, 18, 18, 0.94),red);
+    border:1px white solid;
+    text-decoration: underline;
+    border-radius: 12px;
+    opacity:1;
+}
+/*style for buttons inside projects*/
+.Projects a,.about a{
+    padding:6px;
+    font-size: 20px;
+    margin-top: 1em;
+}
+
+/*end of style*/
+
+.webdev{
+	width:100%;
+	margin: 0;
+	animation:intro 3s;
+	-webkit-animation:intro 3s;
+	background-color:white;
+	background-image: linear-gradient(white,#cccccc);
+	animation:weball 1s;
+	-webkit-animation:weball 1s;
+}
+
+/*developer login style*/
+.dev_login{
+    
+    background-color:white;
+    border-radius:4px;
+    box-shadow: 1px 3px 4px rgb(51, 47, 47);
+
+    
+    
+}
+.p_img{
+    display:flex;
+    flex-direction: row;
+}
+.dev_login:hover{
+    opacity: 0.5;
+    transform: scale(1.05);
+}
+.dev_login>a{
+   color: blue !important;
+    font-weight: bold;
+    text-decoration: none!important;
+}
+/*End of developer login*/
+/*Animations */
+
+
+/*Animations for FadeUp */
+.fadeup{
+    animation:fadeup 1s linear ;
+}
+@keyframes fadeup{
+    from{
+      opacity: 0;
+      top:-2em;
+      position: relative;
+    }
+    to{
+      opacity: 1;
+      top:0em;
+      position: relative;
+    }
+    
+  }
+  /*===End of animation  */
+
+  /*Animations for Faderight */
+.faderight{
+    animation:faderight 1s linear ;
+}
+@keyframes faderight{
+    from{
+        position: relative;
+      opacity: 0;
+      left:2em;
+      
+    }
+    to{
+        position: relative;
+      opacity: 1;
+      left:0em;
+      
+    }
+    
+  }
+  /*===End of animation faderight */
+  
+/*Animations for Fadeout */
+.fadeout{
+    animation: fadeout 1s linear;
+}
+
+@keyframes fadeout{
+    from{
+      opacity: 0;
+      transform: scale(0);
+    }
+    to{
+        opacity: 1;
+        transform: scale(1);
+    }
+    
+  }
+  /*===End of animation  */
+  

@@ -104,6 +104,8 @@ function(){
 	slide_change(0);
 	slides();
 	setInterval(slides,10000);
+	setTimeout(loading,1000);
+
 	
  }
 
@@ -273,6 +275,90 @@ for (i; i<3; i++){
 }
 
 } 
+
+function animate(){
+	 view2(".project_img");
+	view2(".prices");view1(".button"); view1(".card_info");
+
+}
+
+
+
+// Functions to Animate elements when in viewport 
+function view1(target1){
+	$(window).scroll(function() {
+	  var top_of_element = $(target1).offset().top;
+	  var bottom_of_screen = $(window).scrollTop() + $(window).innerHeight();
+	  if ((bottom_of_screen > top_of_element) ){
+		 $(target1).addClass("fadeup");
+		 setTimeout(opas(target1),50);
+		
+	  } 
+	  else {
+		$(target1).removeClass("fadeup");
+		$(target1).attr("style","opacity:0");
+	  }
+	});
+  }
+  function opas(target1){
+	$(target1).attr("style","opacity:1");
+  }
+  
+  
+  function view2(target1){
+	$(window).scroll(function() {
+	  var top_of_element = $(target1).offset().top;
+	  var bottom_of_screen = $(window).scrollTop() + $(window).innerHeight();
+	  if ((bottom_of_screen > top_of_element) ){
+		 $(target1).addClass("faderight"); 
+	   setTimeout(opas(target1),50);
+	  } 
+	  else {
+	  
+		$(target1).removeClass("faderight");
+		$(target1).attr("style","opacity:0");
+	   
+	  }
+	});
+  }
+  
+  function view3(target1){
+	$(window).scroll(function() {
+	  var top_of_element = $(target1).offset().top;
+	  var bottom_of_screen = $(window).scrollTop() + $(window).innerHeight();
+	  if ((bottom_of_screen > top_of_element) ){
+		 $(target1).addClass("fadeout"); 
+		 setTimeout(opas(target1),50);
+	  } 
+	  else {
+		$(target1).removeClass("fadeout");
+		$(target1).attr("style","opacity:0");
+	  }
+	});
+  }
+  //=====End=======//
+
+  function loading(){
+
+	  document.getElementById("all-content").style.display="block";
+	  document.getElementById("loading").style.display="none";
+
+  }
+  //For changing background of Header Bar
+$(window).scroll(function() {
+	var top_of_element = $(".services_section").offset().top;
+	var bottom_of_screen = $(window).scrollTop();
+	if ((bottom_of_screen > top_of_element) ){
+	  document.getElementById("header").style.display="block";
+	  $(".dev_login").attr("id","dev_login_phone");
+	  $(".d_menu").attr("id","d_menu");
+	} 
+	else {
+		document.getElementById("header").style.display="none";
+		$(".d_menu").attr("id","d_menu1");
+	}
+  });
+  //=====End====//
 
   
   
