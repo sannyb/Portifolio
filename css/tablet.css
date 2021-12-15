@@ -291,7 +291,12 @@ body{
 	.webdev{
 		padding:12px;
 	}
-	
+	.loading{
+		
+		width:15%;
+		left:40%;
+		
+	}
 .header{
     height:4em;
 	z-index: 1;

@@ -2,8 +2,7 @@
 .loading{
     position:absolute;
     top:50%;
-    left:45%;
-    width:10%;
+    
     height:4em;
     margin:0px;
     overflow:hidden;

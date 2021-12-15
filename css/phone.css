@@ -163,6 +163,7 @@ ul li{
 	align-items: center;
 	margin-left: auto;
 	margin-right: auto;
+	height:10em;
  }
  #first_p{
 	width:20%;
@@ -237,7 +238,7 @@ ul li{
 }
 /*End of developer login*/
 .services_section h2{
-	font-size: 20px;
+	font-size: 17px;
 }
 		.services1{
 			display:flex;
@@ -256,6 +257,12 @@ ul li{
 		
 .scroll img{
 	width:2em;
+	
+}
+.loading{
+		
+	width:30%;
+	left:33%;
 	
 }
 
@@ -365,7 +372,7 @@ ul li{
 }
 
 .card_info{
-	width:45%;
+	width:80%;
 	padding:2px;
 	border:1px solid grey;
 	border-radius: 8px;
@@ -656,7 +663,7 @@ border:0.5px dotted black;
 	font-weight: bold;
 }
 .services-slides{
-	width:40%;
+	width:50%;
 	border:0.5px solid #cccccc;
 	margin-top: 0px;
 	margin-right: auto;
@@ -810,7 +817,8 @@ border:0.5px dotted black;
 	color:rgba(106,117,46,0.83);
 }
 .text_style{
-	font-size: 14px;
+	font-size: 10px!important;
+	line-height: 18px;
 }
 
 .services12{

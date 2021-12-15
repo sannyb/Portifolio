@@ -394,6 +394,13 @@ border-radius:50%;
 .dev_login>a{
     font-size: 22px;
 }
+
+.loading{
+		
+	width:10%;
+	left:45%;
+	
+}
 /*End of developer login*/
 	
  .d_menu{
@@ -409,7 +416,7 @@ border-radius:50%;
 	border: 0.5px solid white;
 	box-shadow: 1px 3px 4px rgb(51, 47, 47);
 	background-color: white;
-	animation:fadeup 1s linear ;
+	animation:fadeout 1s linear ;
 }
 #d_menu{
 	position: fixed;

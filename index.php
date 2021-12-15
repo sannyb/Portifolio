@@ -1,6 +1,7 @@
 <?php
 
 require_once "config_mogolo.php";
+//https://api.whatsapp.com/send/?phone=971586488888&text=Hi%2C+I+am+Interested+in+properties+from+https%3A%2F%2Fopr.ae.+Kindly+send+me+more+information.+Thank+you&app_absent=0
 
 ?>
 
@@ -22,6 +23,7 @@ require_once "config_mogolo.php";
 
             <meta name="description" name="WebAll Technologies official website">
             <meta name="keywords" content="WebAll Technologies"/>
+            <meta name="google-site-verification" content="AdJFP1RxAG3xncYa1WmnNB48V9-Otw42yzTsIdOVjN8" />
             <meta http-equiv="refresh" content="">
             <meta name="author" content="Belmiro Mohlala"/>
             <meta name="viewport" content="width=device-width, initial-scale=1.0"/> 
@@ -47,7 +49,7 @@ require_once "config_mogolo.php";
 <hr>
 <div class="menu-content"><div  class="menu-icon"><i class="fa fa-book"></i></div><div class="manu_link"><a  href="#about">About Us</a></div></div>
 <hr>
-<div class="menu-content"><div  class="menu-icon">  <i class="fa fa-users"></i></div><div class="manu_link"><a  href="#projects">Projects</a></div></div>
+<div class="menu-content"><div  class="menu-icon">  <i class="fa fa-users"></i></div><div class="manu_link"><a  href="#projects1">Projects</a></div></div>
 <hr>
 <div class="menu-content"><div  class="menu-icon"> <i class="fa fa-phone"></i></div><div class="manu_link"><a  href="#sendmessage"> Contact</a></div></div>
 <hr>
@@ -69,7 +71,7 @@ require_once "config_mogolo.php";
 <div id="all-content" style="display:none;" >
   
   <div class="tablet_hide phone_hide d_menu" ><a href="#services" >SERVICES</a> <span>|</span> 
-    <a href="#projects" >PROJECTS</a> <span>|</span><a href="#sendmessage">CONTACT US</a><span>|</span><a href="#about" >ABOUT US</a></div>
+    <a href="#projects1" >PROJECTS</a> <span>|</span><a href="#sendmessage">CONTACT US</a><span>|</span><a href="#about" >ABOUT US</a></div>
 
 <div class="get_us"> 
 <a href="mailto:info@weball.co.za">info@weball.co.za</a>
@@ -195,7 +197,7 @@ require_once "config_mogolo.php";
         <div class="scroll"><img src="img/scroll.PNG" alt="scrolling"></div>
         <div class="text_style">
           <b>
-         We are dedicated team of developers aimed to solved any Web problems</b>
+         We are dedicated team of developers aimed to solve any Web problems</b>
         </div>
         <p>We design and develop from scratch</p>
         <p> Our team also fix bugs in existing websites, or upgrade your existing website to new  design</p>
@@ -207,7 +209,7 @@ require_once "config_mogolo.php";
       <p>Static website we refering to small website with 1 - 50 pages 
       strictly no database.This package Comes with free domain valid for 1 year .
       </p>
-      <p>Get this package as little as <strong style="color:rgb(207, 64, 64)"> $50 once-off</strong>. We also provide you with maintainance at lower cost of $4/pm</p>
+      <p>Get this package as little as <strong style="color:rgb(207, 64, 64)"> $50 once-off</strong>. We also provide you with maintenance at lower cost of $4/pm</p>
     
 
         </div>
@@ -245,7 +247,7 @@ require_once "config_mogolo.php";
         <p>This is dynamic website which can be scrapping website or any website with dynamic content like school system.</p>
          <p> This comes with 1-5 databases, 1-25 emails, free domain name for 1 year. Get this package as little as<strong style="color:rgb(207, 64, 64)"> $150 once-off</strong>
         . This can be <span class="danger">Blog </span>, to ensure that your customers browse safely we 
-          provide SSL certificate for your site(https://...). We provide maintainance with additional charge of $10/pm
+          provide SSL certificate for your site(https://...). We provide maintenance with additional charge of $10/pm
         </p>
 
     </div>
@@ -280,7 +282,7 @@ require_once "config_mogolo.php";
 <div class="first_services">
     <p>Get an ecommerce website and start selling online</p>
      <p> This comes with 1-5 databases, 1-25 emails, free domain name for 1 year. Get this package as little as<strong style="color:rgb(207, 64, 64)"> $200 once-off</strong></p>
-    <p>To ensure that your customers browse safely we provide SSL certificate for your site(https://...). We provide maintainance with additional charge of $10/pm </p>
+    <p>To ensure that your customers browse safely we provide SSL certificate for your site(https://...). We provide maintenance with additional charge of $10/pm </p>
 </div>
 
 <p>For more infomation regarding this package contact us here </p>
@@ -295,14 +297,14 @@ require_once "config_mogolo.php";
 <div>
   <h3>Our Major Projects:</h3>
   
-  <div class="Projects" id="Projects">
+  <div class="Projects" id="projects1">
     
   <div style="background-color: floralwhite;" >
     <h4> Project 1:Bitcoin Investing platform(Smart investa )</h4>
     <p>Our team is known of creating fast scalable and responsive websites, this is one of our work that we are proud of. It is 
       Bitcoin Investing platform that enables people all over the world to invest in Bitcoin with secure and safe platform. </p>
       <p> Our team does not rely on certain programming language, we use the language that is suitable to complete the project</p>
-<div class="p_img"><img class="project_img" id="first_p" src="img/project2.png" /> <img class="project_img" src="img/project1.png" /> </div>
+<div class="p_img"><img class="project_img" id="first_p" src="img/project2.PNG" /> <img class="project_img" src="img/project1.png" /> </div>
   
   <div>
   
