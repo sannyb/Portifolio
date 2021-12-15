@@ -19,10 +19,15 @@ h4{
 	color: white !important;
 }
 @font-face {
-font-family:MyFont;
-src:url(OpenBaskerville-0.0.53.otf);
+font-family:hand_font;
+src:url(hand_font.ttf);
 }
 
+@font-face {
+	font-family:MyFont;
+	src:url(OpenBaskerville-0.0.53.otf);
+	}
+	
 
 @font-face {
 font-family:MyFont1;
@@ -746,7 +751,37 @@ border:2px dotted black;
 }
 .Projects{
 	border: #cccccc solid 0.5px;
+	display:flex;
+	flex-wrap: wrap;
 }
+
+.Projects h4{
+	width: 100%;
+}
+.project_card{
+	width: 50%;
+	margin: 1px 10px 1px 10px;
+	padding: 10px 4px 3px 70px;
+	text-align: center;
+	color: white;
+	border-radius: 10px;
+}
+.project_card .notes{ 
+background-color:white;
+color: #e44800;
+padding: 3px;
+font-size: 10px;
+font-family: hand_font;
+border-radius:3px;
+position:absolute;
+bottom:inherit;
+left: 5px;
+z-index: 1;
+}
+.project_card p{
+	color: white;
+}
+
 .Projects div img{
      border:black solid 0.5px;
 	margin:10px;
@@ -754,7 +789,7 @@ border:2px dotted black;
 }
 
 
-.Projects div .project_img{
+.Projects  .project_img{
 	width:60%;
 	align-items: center;
 	margin-left: auto;
@@ -766,7 +801,7 @@ border:2px dotted black;
  }
  
 .p_img{
-   width:75%;
+   width:46%;
    margin: auto;
 }
 
