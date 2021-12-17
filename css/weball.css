@@ -276,3 +276,18 @@ margin-left: 15px;
   }
   /*===End of animation  */
   
+
+  .about{
+      width: 100%;
+  }
+
+  .contactss {
+     width: 100%;
+     background: linear-gradient(to bottom right ,rgb(39, 164, 223) ,rgb(124, 196, 201));
+     position: absolute;
+     height: 100%;
+
+  }
+  .contactss p{
+      color: black;
+  }

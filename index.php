@@ -34,7 +34,7 @@ require_once "config_mogolo.php";
             <noscript> Your Browser Does Not Support Javascript </noscript>
 			
 			
-			
+            
 
 </head>
 
@@ -342,34 +342,10 @@ require_once "config_mogolo.php";
 </div>
 <div id="about" class="about"> 
 <h3> About Us </h3>  
-  <div class="important-info">We specialize with Web Design, Web development and Android App Development ,  </div>
-  
-  <div class="prices" >
-    <div><strong>WebAll Technologies</strong> is an IT company founded by Belmiro Mohlala in 2020  and formalised in 2021<br>
-    it is registered under CIPC <span class="danger">Reg no:2021/549791/07.</span><br><strong>
-    WebAll</strong> focus on different fields of Programming, which are <br><ol><li><strong>Web development</strong>
-    </li><li><strong>Software development.</strong></li></ol>
-  </div> 
-  
-    <div><strong>Weball</strong> covers <span style="color:aqua; font-size:20px; font-weight:bold;">Graphic Design:</span>
-      <br><ol><li><strong>Logo Design</strong>
-      </li><li><strong>Video Edit</strong></li>
-    </li><li><strong>etc...</strong></li></ol>
-  </div>
-  
-   
-      <p>Contact us for more information:</p>
-      <p  ><a class="button" href="#sendmessage">Contact</a></p>
-    </div>
-  
-  <div class="prices">
-    
-    <p>In <strong>WebAll Technologies</strong> we have skilled developers who can take your Business to another level.<br>
-   </p>
-    
-    
-  </div>
-  
+ 
+<div class="contactss">
+<p><b>We specialize with web design, web development and android app development.</b></p>
+</div>
   
   
   </div>
