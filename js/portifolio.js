@@ -72,8 +72,23 @@ $(document).ready( function(){
 				}
 				);
 				});
+				
+$(document).ready( function(){
+	$("[href='#header']").click(
+		function(){	
+		$(".bar").show();
+			$("#all-content").removeClass("all-content");
+			$(".menu-drop-down").hide();
+			$(".menu-cancel").hide();
+			$(".all-content").css({"opacity":"1","left":"0","width":"100%","animation":"allconten 1s","-webkit-animation":"allconten 1s"});
+			$(".task_bar").css({"left":"0","animation":"allconten 1s","-webkit-animation":"allconten 1s"});	
+			current_slide(0);
+				}
+				);
+				});
+
 				$(document).ready( function(){
-					$("[href='#projects']").click(
+					$("[href='#projects1']").click(
 					function(){	
 						$(".bar").show();
 				$("#all-content").removeClass("all-content");
@@ -100,12 +115,23 @@ function(){
 );
 });
 
+function init(){
+	$(".project_img").hide();  
+	$(".prices").attr("style","display:none;");
+	$(".card_info").attr("style","display:none;");
+	$("#p_img2").attr("style","display:none;"); 
+	$("#projects1").attr("style","display:none;");
+	$("#projects2").attr("style","display:none;");
+}
+
  function portfolio(){
+	
 	slide_change(0);
 	slides();
 	setInterval(slides,10000);
 	setTimeout(loading,1000);
 	setTimeout(whatsap,5000);
+
 
 	
  }
@@ -261,7 +287,7 @@ function show1(){
 	let i = 0
 let x = document.getElementsByClassName("webdev");
 
-for (i; i<2; i++){
+for (i; i<3; i++){
 	x[i].style.display="block";
 }
 
@@ -278,14 +304,16 @@ for (i; i<3; i++){
 } 
 
 function animate(){
-	 view1(".project_img");
-	view1(".prices");view1(".button"); view1(".card_info");
+	view1(".button");
+	
 
+	
 }
+//view1(".prices"); view1(".card_info"); view2(".project_img");  
+//view2("#p_img2"); 
 
 
-
-// Functions to Animate elements when in viewport 
+// Functions to Animate elements when in viewport  projects1
 function view1(target1){
 	$(window).scroll(function() {
 	  var top_of_element = $(target1).offset().top;
@@ -295,10 +323,7 @@ function view1(target1){
 		 setTimeout(opas(target1),50);
 		
 	  } 
-	  else {
-		$(target1).removeClass("fadeup");
-		$(target1).attr("style","opacity:0");
-	  }
+	 
 	});
   }
   function opas(target1){
@@ -314,12 +339,7 @@ function view1(target1){
 		 $(target1).addClass("faderight"); 
 	   setTimeout(opas(target1),50);
 	  } 
-	  else {
-	  
-		$(target1).removeClass("faderight");
-		$(target1).attr("style","opacity:0");
-	   
-	  }
+	 
 	});
   }
   
@@ -331,18 +351,19 @@ function view1(target1){
 		 $(target1).addClass("fadeout"); 
 		 setTimeout(opas(target1),50);
 	  } 
-	  else {
-		$(target1).removeClass("fadeout");
-		$(target1).attr("style","opacity:0");
-	  }
+	
 	});
   }
   //=====End=======//
 
   function loading(){
+	  console.log("No errors found in the Weball.co.za");
 
 	  document.getElementById("all-content").style.display="block";
 	  document.getElementById("loading").style.display="none";
+	  view1("#projects1"); view1("#projects2");
+	  view1(".prices"); view1(".card_info"); view2(".project_img");  
+view2("#p_img2");
 
   }
   //For changing background of Header Bar
@@ -350,13 +371,14 @@ $(window).scroll(function() {
 	var top_of_element = $(".services_section").offset().top;
 	var bottom_of_screen = $(window).scrollTop();
 	if ((bottom_of_screen > top_of_element) ){
-	  document.getElementById("header").style.display="block";
 	  $(".dev_login").attr("id","dev_login_phone");
 	  $(".d_menu").attr("id","d_menu");
+	  $(".header").attr("id","header");
 	} 
 	else {
-		document.getElementById("header").style.display="none";
 		$(".d_menu").attr("id","d_menu1");
+		$(".header").attr("id","header1");
+		$(".dev_login").attr("id","dev_login_phone1");
 	}
   });
   //=====End====//

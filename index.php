@@ -11,18 +11,23 @@ require_once "config_mogolo.php";
 
 <head>
  <title>WebAll Technologies</title>
- 
+           
+            <link type="text/css"  rel="stylesheet" href="fonts/css/all.css"/>
+            <link type="text/css"  rel="stylesheet" href="fonts/css/brands.css"/>
+            <link type="text/css"  rel="stylesheet" href="fonts/css/solid.css"/>
+            <link type="text/css"  rel="stylesheet" href="font/css/font-awesome.css"/>
+
+
             <link href="css/phone.css" rel="stylesheet" type ="text/css" />
             <link rel="shortcut icon" href="img/weball.PNG">
             <link href="css/desktop.css" rel="stylesheet" type ="text/css" />
             <link href="css/tablet.css" rel="stylesheet" type="text/css"  />
             <link href="css/weball.css" rel="stylesheet" type="text/css"  />
-            <link rel="stylesheet" type="text/css" href="font/css/font-awesome.css" />
-            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+           
                          
 
             <meta name="description" name="WebAll Technologies official website">
-            <meta name="keywords" content="Weball Technologies,weball, Web development,"/>
+            <meta name="keywords" content="Weball Technologies,weball, Web development,Digital agency company in SA"/>
             <meta name="google-site-verification" content="AdJFP1RxAG3xncYa1WmnNB48V9-Otw42yzTsIdOVjN8" />
             <meta http-equiv="refresh" content="">
             <meta name="author" content="Belmiro Mohlala"/>
@@ -32,6 +37,7 @@ require_once "config_mogolo.php";
 			      <script src="js/jquery-3.5.1.min.js" ></script>
             <script src="js/portifolio.js" ></script>
             <noscript> Your Browser Does Not Support Javascript </noscript>
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 			
 			
 			
@@ -42,7 +48,7 @@ require_once "config_mogolo.php";
 
 <div class="menu-drop-down">
 <div class="menu-cancel"> &times; </div>
-<div class="search"><select id="search" name="categories"><option value="all">All</option> <option value="Hosting">Hosting</option> <option value="Design">Hosting</option> <option value="maintainance">Maintainance</option></select>
+<div class="search"><select id="search" name="categories"><option value="all">All</option> <option value="Hosting">Hosting</option> <option value="Design">Website</option> <option value="maintainance">Maintainance</option></select>
 <input type="text" name="search_value" id="search_value" placeholder="search our site" /><i class="fa fa-search"></i> </div>
 <hr>
 <div class="menu-content"> <div class="menu-icon"><i class="fa fa-home"></i></div><div class="manu_link"><a href="#header">Home</a></div></div>
@@ -59,6 +65,7 @@ require_once "config_mogolo.php";
 </div>
 <!--Start of loader-->
 <div class="loading" id="loading">
+  <div class="loader">LOADING...</div>
   <div class="top"></div>
   <div class="bottom"></div>
   <div class="left"></div>
@@ -75,7 +82,7 @@ require_once "config_mogolo.php";
 
 <div class="get_us"> 
 <a href="mailto:info@weball.co.za">info@weball.co.za</a>
-<a href=""> +27 (0)728108533</a>
+<a href="#phone" class="phone_hide"> +27 (0)728108533</a>
 </div>
 
 <div class="dev_login " >
@@ -88,7 +95,7 @@ require_once "config_mogolo.php";
   <div class="bar"> </div>
   <div class="bar"> </div>
 </div>
-<header class="header" id="header">
+<header class="header" id="header1">
   </header>
   <div class="whatsaap">
     <span class="notification" id="notification">1</span>
@@ -139,8 +146,8 @@ require_once "config_mogolo.php";
 
 
 
-<div class="container">
-  <div class = "coding" ><img src="img/logo1.jpg"> </div>
+<div class="container"  >
+  <div class = "coding" ><img onload="init()" src="img/logo1.jpg"> </div>
   
   <div class="name">
   
@@ -179,15 +186,17 @@ require_once "config_mogolo.php";
 
 <!-- services starts-->
 <section class="services_section">
-  <h1> Services </h1>
+ 
   <h2> GET PROFESSIONAL WEBSITE FROM AS LITTLE AS <b style="color:rgb(206, 73, 73)"> $50</b> </h2>
+  <h1> Services </h1>
 <div class="webdev" >
-  <div class="services" id="services" onscroll="show1()" >
+  <div class="services" id="services"  onscroll="show1()">
       <div class="services-slides">
           
+        
+          <div class="offset " onclick="current_slide(1)">Dynamic Web</div>
           <div  class="services-btn" onclick="current_slide(0)">Static web</div>
-          <div class="offset phone_hide tablet_hide" onclick="current_slide(1)">Dynamic Web</div>
-          <div class="offset phone_hide tablet_hide" onclick="current_slide(2)">E-commerce</div>
+          <div class="offset" onclick="current_slide(2)">E-commerce</div>
       </div>
       <br class="phone_hide" >
       <br class="phone_hide">
@@ -199,18 +208,54 @@ require_once "config_mogolo.php";
           <b>
          We are dedicated team of developers aimed to solve any Web problems</b>
         </div>
-        <p>We design and develop from scratch</p>
-        <p> Our team also fix bugs in existing websites, or upgrade your existing website to new  design</p>
-
-      <h3>Website Package:</h3>
-     
+        <p class="small_text">We design and develop from scratch <br>
+          Our team also fix bugs in existing websites, or upgrade your existing website to new  design</p>
+      <h3>Website Packages:</h3>
       <div class="first_services">
-        <p><strong style="color:black">1.Static Website</strong></p>
-      <p>Static website we refering to small website with 1 - 50 pages 
-      strictly no database.This package Comes with free domain valid for 1 year .
+        <p><strong style="color:black">1.Static Websites</strong></p>
+      <p> All static sites have no databases, dynamic pages can be added with additional cost.
       </p>
-      <p>Get this package as little as <strong style="color:rgb(207, 64, 64)"> $50 once-off</strong>. We also provide you with maintenance at lower cost of $4/pm</p>
-    
+      <p>No <strong style="color:rgb(207, 64, 64)"> Hosting Package. </strong></p>
+     
+    <div class="packages">
+
+      <div class="package">
+        <div class="package_header">Starter Package</div>
+        <div class="price">From $50 </div>
+        
+        <div class="package_body">
+          <ol>
+          <li>1-5 static pages</li>
+          <li>Free SSL certificate</li> 
+          <li>Resposinve Design</li> 
+          <li>Free Domain</li>
+          <li>1 professional email</li>
+          </ol>
+      </div>
+      <p> Additional of $4/pm for maintenance</p>
+
+        <div class="request button"><i class="fa fa-mail">&#128231</i><a href="mailto:info@weball.co.za"> I NEED THIS</a></div>
+        </div>
+
+        <div class="package">
+          <div class="package_header"><i class="fa fa-star"></i>Starter Package Pro </div>
+          <div class="price">From $80 </div>
+         
+          <div class="package_body">
+            <ol>
+            <li>1-10 static pages</li>
+            <li>Free SSL certificate</li> 
+            <li>Resposinve Design</li> 
+            <li>Free Domain</li>
+            <li>2 professional emails</li>
+            </ol>
+        </div>
+        <p> Additional of $4/pm for maintenance</p>
+        <div class="request button"><i class="fa fa-mail">&#128231</i><a href="mailto:info@weball.co.za"> I NEED THIS</a></div>
+          </div>
+         
+      </div>
+   
 
         </div>
         <p>For more infomation regarding this package contact us here </p>
@@ -221,17 +266,19 @@ require_once "config_mogolo.php";
 
 
 
-      <p style="color:rgb(245, 183, 12)"> All given projects will be completed within 30 days from effective day</p>
+      <p style="color:rgb(245, 183, 12)"> All our projects are completed within 30 days from effective day</p>
       </div>
   <div class="btn-left" onclick="slide_change(-1)"><i class="fa fa-angle-left"></i></div><div class="btn-right" onclick="slide_change(1)"><i class="fa fa-angle-right"></i></div>
 </div>
 <div class="webdev" >
 
-<div class="services" onscroll="show2()" >
+<div class="services" onscroll="show1()">
     <div class="services-slides">
-        <div class="offset phone_hide tablet_hide" onclick="current_slide(0)">Static web</div>
+        
+       
+        <div class="offset " onclick="current_slide(2)">E-commerce</div>
         <div class="services-btn" onclick="current_slide(1)">Dynamic Web</div>
-        <div class="offset phone_hide tablet_hide" onclick="current_slide(2)">E-commerce</div>
+        <div class="offset " onclick="current_slide(0)">Static web</div>
     </div>
     <br class="phone_hide">
     <br class="phone_hide">
@@ -240,17 +287,65 @@ require_once "config_mogolo.php";
       <b>
     Do you have bugs on Your web app or is running slow?</b>
     </div>
-    <p> We develop web app/sytems from scratch and  fix bugs in any existing website</p> 
-    <h3>Website Package:</h3>
+    <p class="small_text"> Get  website for business, school management system, work management system, and more...<br>
+      Payment integration will be added with additional cost</p> 
+   
+    <h3>Website Packages:</h3>
     <div class="first_services">
-      <p><strong style="color:black">2.Dynamic Website</strong></p>
-        <p>This is dynamic website which can be scrapping website or any website with dynamic content like school system.</p>
-         <p> This comes with 1-5 databases, 1-25 emails, free domain name for 1 year. Get this package as little as<strong style="color:rgb(207, 64, 64)"> $150 once-off</strong>
-        . This can be <span class="danger">Blog </span>, to ensure that your customers browse safely we 
-          provide SSL certificate for your site(https://...). We provide maintenance with additional charge of $10/pm
-        </p>
+      <p><strong style="color:black">2.Dynamic Websites</strong></p>
+    <div class="packages">
+      <div class="package">
+        <div class="package_header">Start Up Business </div>
+        <div class="price">From $100 </div>
+        <div class="package_body">
+          <ol>
+          <li>1-5 Dynamic pages</li>
+          <li>Free SSL certificate</li> 
+          <li>Resposinve Design</li> 
+          <li>Free Domain</li>
+          <li>2 professional emails</li>
+          </ol>
+      </div>
+      <p> Additional of $10/pm for maintenance</p>
 
-    </div>
+        <div class="request button"><i class="fa fa-mail">&#128231</i><a href="mailto:info@weball.co.za"> I NEED THIS</a></div>
+        </div>
+        <div class="package">
+          <div class="package_header">Small Business </div>
+          <div class="price">From $150 </div>
+          <div class="package_body">
+            <ol>
+            <li>1-10 pages</li>
+            <li>Free SSL certificate</li> 
+            <li>Resposinve Design</li> 
+            <li>Free Domain</li>
+            <li>5 professional emails</li>
+            </ol>
+        </div>
+        <p> Additional of $10/pm for maintenance</p>
+  
+          <div class="request button"><i class="fa fa-mail">&#128231</i><a href="mailto:info@weball.co.za"> I NEED THIS</a></div>
+          </div>
+
+          <div class="package">
+            <div class="package_header"> <i class="fa fa-star"></i>Web Application </div>
+            <div class="price">From $170 </div>
+            <div class="package_body">
+              <ol>
+              <li>1-15 pages</li>
+              <li>Free SSL certificate</li> 
+              <li>Resposinve Design</li> 
+              <li>Free Domain</li>
+              <li>6 professional emails</li>
+              </ol>
+          </div>
+          <p> Additional of $10/pm for maintenance</p>
+    
+            <div class="request button"><i class="fa fa-mail">&#128231</i><a href="mailto:info@weball.co.za"> I NEED THIS</a></div>
+            </div>
+        
+      </div>
+</div>
     <p>For more infomation regarding this package contact us here </p>
     <p><i class="fa fa-arrow-down"></i> </p>
     <a  class="button" href="#contact">Contact us</a>
@@ -262,11 +357,15 @@ require_once "config_mogolo.php";
 
 <div class="webdev" >
 
-<div class="services"  onscroll="show2()" >
+<div class="services"  onscroll="show1()">
     <div class="services-slides">
-        <div class="offset phone_hide tablet_hide"  onclick="current_slide(0)">Static web</div>
-        <div class="offset phone_hide tablet_hide" onclick="current_slide(1)">Dynamic Web</div>
-        <div class="services-btn"  onclick="current_slide(2)">E-commerce</div>
+        
+       
+        <div class="offset" onclick="current_slide(1)">Dynamic Web</div>
+         <div class="services-btn"  onclick="current_slide(2)">E-commerce</div>
+        <div class="offset"  onclick="current_slide(0)">Static web</div>
+        
+       
     </div>
 
     <br class="phone_hide">
@@ -274,15 +373,50 @@ require_once "config_mogolo.php";
     <br class="phone_hide">
     <br class="phone_hide">
 
- 
-<div id="ecommerce"><p><strong>3.E-commerce Website</strong></p>
-      <p>Take your Business to next level by bringing up online shopping.</p>
-</div>
-
+<p class="small_text">Take your Business to next level by selling your products online</p>
+<h3>Website Packages:</h3>
 <div class="first_services">
-    <p>Get an ecommerce website and start selling online</p>
-     <p> This comes with 1-5 databases, 1-25 emails, free domain name for 1 year. Get this package as little as<strong style="color:rgb(207, 64, 64)"> $200 once-off</strong></p>
-    <p>To ensure that your customers browse safely we provide SSL certificate for your site(https://...). We provide maintenance with additional charge of $10/pm </p>
+  <p><b>3.E-commerce Website</b></p>
+    <div class="packages">
+
+      <div class="package">
+        <div class="package_header">Small Business</div>
+        <div class="price">From $200 </div>
+        
+        <div class="package_body">
+          <ol>
+          <li>1-12 dynamic pages</li>
+          <li>Free SSL certificate</li> 
+          <li>Resposinve Design</li> 
+          <li>Free Domain</li>
+          <li>5 professional emails</li>
+          <li>Payment integration</li>
+          </ol>
+      </div>
+      <p> Additional of $12/pm for maintenance</p>
+
+        <div class="request button"><i class="fa fa-mail">&#128231</i><a href="mailto:info@weball.co.za"> I NEED THIS</a></div>
+        </div>
+
+        <div class="package">
+          <div class="package_header"><i class="fa fa-star"></i>Advanced Business </div>
+          <div class="price">From $450 </div>
+         
+          <div class="package_body">
+            <ol>
+            <li>1-50 dynamic pages</li>
+            <li>Free SSL certificate</li> 
+            <li>Resposinve Design</li> 
+            <li>Free Domain</li>
+            <li>10 professional emails</li>
+            <li>Payment integration</li>
+            </ol>
+        </div>
+        <p> Additional of $20/pm for maintenance</p>
+        <div class="request button"><i class="fa fa-mail">&#128231</i><a href="mailto:info@weball.co.za"> I NEED THIS</a></div>
+          </div>
+         
+      </div>
 </div>
 
 <p>For more infomation regarding this package contact us here </p>
@@ -299,74 +433,115 @@ require_once "config_mogolo.php";
   
   <div class="Projects" id="projects1">
     <h4> Project 1:Bitcoin Investing platform(Smart investa )</h4>
+  <div class="p_img"><img class="project_img" id="first_p" src="img/project2.PNG" /> <img class="project_img" src="img/project1.png" /> </div>
+
     
-  <div class="card project_card">
+  <div class="card project_card" style="animation-delay: 0.5s;">
+    <div class="notes_top">Bitcoin <i class="fa fa-star"></i> </div>
+    
+
     <p>Our team is known of creating fast scalable and responsive websites, this is one of our work that we are proud of. It is 
-      Bitcoin Investing platform that enables people all over the world to invest in Bitcoin with secure and safe platform. </p>
+      a Bitcoin Investing platform that enables people all over the world to invest in Bitcoin with secure and safe platform. </p>
       <p> Our team does not rely on certain programming language, we use the language that is suitable to complete the project</p>
-   <p> This website includes database, and is responsive to all media devices(different screen sizes) </p>
+   <p> This website is used by 100K+ people, and is responsive to all media devices( display fine in different screen sizes) </p>
 
   <div ><a   class="button" href="https://www.smartinvesta.co.za">Visit Site+</a></div>
   
-<div class="notes"> <i class="fa fa-angle-right"></i>Notes about project</div>
+<div class="notes">Notes about project</div>
   </div>
 
-  <div class="p_img"><img class="project_img" id="first_p" src="img/project2.PNG" /> <img class="project_img" src="img/project1.png" /> </div>
 
   </div>
-  <hr>
   
-  <div class="Projects" >
-    <div >
-      <h4> Project 2: E-commerce (Online Shopping Website)</h4>
-      <p>This is the project our team is curretly busy with, we just got started with this project and is one of the
-        most interesting projects since Ecommerce is growing exponetially
-      </p>
-      <div class="p_img"> <img class="project_img" id="first_p" src="img/ecommerce.png" > <img  class="project_img"  src="img/ecommerce1.png" ></div>
-    
-    <div>
-    
-    
-      
-    <p > This website includes database,CMS( Content Management System) and is responsive to all 
+  
+  <div class="Projects" id="projects2">
+    <h4> Project 2: E-commerce (Online Shopping Website)</h4>
+    <div class="p_img" id="p_img2"> <img class="project_img" id="second_p" src="img/ecommerce.png" > <img  class="project_img"  src="img/ecommerce1.png" ></div>
+    <div class="card project_card" style="animation-delay: 0.5s;">
+      <div class="notes_top">Shopping <i class="fa fa-star"></i> </div>
+     
+      <p>Our deticated team has created samples of e-commerce sites for our customers</p>
+      <p> This is simple e-commerce site that includes basic features, we created this for you
+        to have taste of our products before getting one so go ahead and test it, it's free. </p>
+      <p> <b>Follow these steps</b></p>
+      <ol>
+        <li>Click the link at bottom to <span style="color:rgb(241, 144, 16)">visit site</span></li>
+        <li>Sign up for demo account then login </li>
+        <li>Shop for any item by adding to cart</li>
+        <li>Proceed to checkout then Done</li>
+        </ol>
+    <p > This website includes CMS( Content Management System) and is responsive to all 
       media devices(different screen sizes)</p>
+
     <div ><a class="button" href="http://www.weball.co.za/Online/ecommerce/Joseph.php">Visit site+</a></div>
+    <div class="notes"> <i class="fa fa-computer"></i>Notes about project</div>
     </div>
-    
-    </div>
-    </div>
-    
-</div>
-<div id="about" class="about"> 
-<h3> About Us </h3>  
-  <div class="important-info">We specialize with Web Design, Web development and Android App Development ,  </div>
-  
-  <div class="prices" >
-    <div><strong>WebAll Technologies</strong> is an IT company founded by Belmiro Mohlala in 2020  and formalised in 2021<br>
-    it is registered under CIPC <span class="danger">Reg no:2021/549791/07.</span><br><strong>
-    WebAll</strong> focus on different fields of Programming, which are <br><ol><li><strong>Web development</strong>
-    </li><li><strong>Software development.</strong></li></ol>
-  </div> 
-  
-    <div><strong>Weball</strong> covers <span style="color:aqua; font-size:20px; font-weight:bold;">Graphic Design:</span>
-      <br><ol><li><strong>Logo Design</strong>
-      </li><li><strong>Video Edit</strong></li>
-    </li><li><strong>etc...</strong></li></ol>
-  </div>
-  
+
    
-      <p>Contact us for more information:</p>
-      <p  ><a class="button" href="#sendmessage">Contact</a></p>
+    
+    
     </div>
+
+   
   
+</div>
+    
+
+<div id="about" class="about"> 
+<h3> Why Choose Us </h3>  
+<div class="triangle"></div>
   <div class="prices">
-    
-    <p>In <strong>WebAll Technologies</strong> we have skilled developers who can take your Business to another level.<br>
-   </p>
-    
+   
+      <div class="scrolling" >
+            
+            <div class="choose package">
+              <div class="package_header"> <i class="fas fa-lock"> </i> Security</div>
+            <p>
+                We ensure that your data is secured by providing SSL Certificate for free.
+                With your data encrypted makes it extremely hard for hackers to get your data.
+                We encrypt your login sytems and banking sytems 
+            </p>
+          <div class="like notes">
+            <span class="like_number">506</span> <i class="fa fa-thumbs-up"aria-hidden="true"></i>
+            <span class="like_number">4</span><i class="fa fa-thumbs-down" ></i>
+          </div>
+            </div>
+
+            <div class="choose package">
+              
+              <div class="package_header">  <i class="fas fa-user"></i> Support</div>
+            <p>
+                Fast reply in all media platform including emails<br>
+                We attend queries from 08:00h-17:00h From Monday till Friday and 08:00h-14:00h on
+                weeekends and holidays.
+                We reply within 24 hours
+            </p>
+          <div class="like notes">
+            <span class="like_number">46</span> <i class="fa fa-thumbs-up"aria-hidden="true"></i>
+            <span class="like_number">2</span><i class="fa fa-thumbs-down" ></i>
+          </div>
+            </div>
+
+            <div class="choose package">
+              
+              <div class="package_header"> <i class="fas fa-cogs"> </i> Quality services</div>
+            <p>
+                We use modern technologies to develop websites and achieve 
+                nice, user friendly and secured websites. We allow our clients to 
+                bring on their ideas and we integrate them technically.
+            </p>
+          <div class="like notes">
+            <span class="like_number">102</span> <i class="fa fa-thumbs-up"aria-hidden="true"></i>
+            <span class="like_number">0</span><i class="fa fa-thumbs-down" ></i>
+          </div>
+            </div>
+
+
+            
+              
+        </div>
     
   </div>
-  
   
   
   </div>
@@ -380,14 +555,15 @@ require_once "config_mogolo.php";
   <div class="contact_details1">
     <h3>More Info </h3>
     <div class="contact_details2">
-      <div class="card_info"><em>FOLLOW US</em>
-        <ul>
-      <li><i class="fa fa-facebook" style="color:blue;"></i><a href="#">  Facebook</a></li>
-      <li><i class="fa fa-twitter" style="color:navy;"></i> Twitter</li>
-      <li><i class="fa fa-whatsapp" style="color:green;"></i> WhatsApp</li>
-      </ul>
+      <div class="card_info"><p><b>Find Us</b></p>
+      <p> <b> Address </b> <br>
+          R37, Burgersfort
+          Limpopo, 1150</p>
+          <p> <b>Hours </b> <br>
+            Monday-Friday:08:00h-17:00h <br>
+           Saturday:08:00h-14:00h</p>
       </div>
-      <div class="card_info"><em>CONTACT US</em>
+      <div class="card_info"><p><b>CONTACT US</b></p>
         <p><i class="fa fa-phone"></i> <span class="phone_hide">Phone</span>: (+27) 728 108 533</p>
         <p><i class="fa fa-whatsapp" style="color:green;"></i><span class="phone_hide"> WhatsApp:</span> (+27) 728 108 533</p>
         <p><i class="fa fa" style="color:yellow">&#128231</i><span class="phone_hide"> Email:</span> <a href="mailto:info@weball.co.za">info@weball.co.za</a></p>
@@ -395,7 +571,7 @@ require_once "config_mogolo.php";
 
 
       </div>
-      <div id="sendmessage" class="sendmessage"><em>SEND MESSAGE</em>
+      <div id="sendmessage" class="sendmessage"><p><b>SEND MESSAGE</b></p>
         <br>
       <form method="POST" action="" id="contact">
         <p><input  type="text" name="email1" placeholder="Enter Your Email" required></p>
@@ -454,7 +630,7 @@ require_once "config_mogolo.php";
     
                  mail($to,$subject,$message,$headers);
     
-                 $result1 = "<div class='weball_pop_ups' style='display:block;' id='pop_up1'>
+                 $result1 = "<div class='weball_pop_ups' style='display:block;z-index:1001;' id='pop_up1'>
                  <div class='cancel_btn_weball'> &times </div><h2 style='color:green;'>Your message was send successfully,
                  we will get back to you as soon as possible, please keep checking your emails</h2>
               </div>";
@@ -473,12 +649,80 @@ require_once "config_mogolo.php";
       ?>
       </div>
     </div>
-    <p>&copy <strong>Copyright 2021 WebAll Technologies</strong></p>
+  
     
    </div>
   
 
   </div>
+  <footer >
+    <div class="card_shadow1"></div>
+    <div class="card_shadow"></div>
+    <?php 
+    if(isset($_POST["newsletter"])){
+      $email = htmlspecialchars($_POST["newsletter"]);
+      $sql="INSERT INTO newsletter(email) VALUES ('$email')";
+      if($conn->query($sql)){
+        $result1 = "<div class='weball_pop_ups' style='display:block; z-index:1001;' id='pop_up1'>
+        <div class='cancel_btn_weball'> &times </div><h2 style='color:green;'>You successfully subscribed to our
+        weekly newsletter you will get corresponding email soon.
+        You can unsubscribe anytime</h2>
+     </div>";
+      }
+      else{
+        echo "<script> alert('Encountered server error while subscribing, Try later')</script>";
+      }
+    }
+    
+    ?>
+    <form action="#" method="POST" class="newsletter card">
+      <div class="package_header newsletter1">KEEP UP TO DATE WITH OUR OFFERS</div>
+      <p>with our hand-crafted weekly newsletter</p>
+      <div >
+        <input type="text" name="newsletter" id="newsletter" placeholder="info@weball.co.za"/>
+        <input type="submit" value="Subscribe" class="button"/>
+      </div>
+      </form>
+      <div class="footer_body">
+        <div>
+          <div class="header_footer newsletter1">Follow US</div>
+          <div class="socials"><i class="fa fa-twitter"></i>Twitter</div>
+          <div class="socials"><i class="fa fa-facebook"></i>Facebook</div>
+          <div class="socials"> <i class="fa fa-youtube-square"></i>YouTupe</div>
+          <div class="socials"> <i class="fa fa-whatsapp"></i>WhatsApp</div>
+          <div class="socials"><i class="fa fa-instagram"></i>Instagram</div>
+        </div>
+
+        <div>
+          <div class="header_footer newsletter1">About Us</div>
+         <p> Our objective is to bring up solutions to web based problems to all our existing  and 
+           pontetial clients</p>
+          <p> We are team of young dedicated developers with different 
+            skills to create beautiful,responsive and
+                        secured sites
+          </p>
+
+        </div>
+        <div>
+          <div class="header_footer newsletter1">Quick Links</div>
+         <p> Home</p>
+          <p>Our Work</p>
+          <p>Contact</p>
+          <p>Services</p>
+        </div>
+
+        <div>
+          <div class="header_footer newsletter1">Accepted Payments</div>
+         <p> Visa</p>
+          <p>Mastercard</p>
+          <p>Bank EFT</p>
+          <p>Perfect Money</p>
+        </div>
+
+      </div>
+<div class="copy"> Copyright 2021 &copy; Weball Technologies </div>
+<div class="copy"> Developed by Weball Team </div>
+   </footer> 
 
 
 
