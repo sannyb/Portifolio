@@ -384,7 +384,9 @@ footer{
 	width:100%;
 	margin:0px;
 	overflow:scroll;
-	margin-top:-2em;
+	margin-top:-1em;
+	position: sticky;
+	left:0;
 }
 
 .contact_details1{

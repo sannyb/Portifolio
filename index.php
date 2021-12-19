@@ -211,11 +211,12 @@ require_once "config_mogolo.php";
         <p class="small_text">We design and develop from scratch <br>
           Our team also fix bugs in existing websites, or upgrade your existing website to new  design</p>
       <h3>Website Packages:</h3>
-      <div class="first_services">
-        <p><strong style="color:black">1.Static Websites</strong></p>
+      <p><strong style="color:black">1.Static Websites</strong></p>
       <p> All static sites have no databases, dynamic pages can be added with additional cost.
       </p>
       <p>No <strong style="color:rgb(207, 64, 64)"> Hosting Package. </strong></p>
+      <div class="first_services">
+      
      
     <div class="packages">
 
