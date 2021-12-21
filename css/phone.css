@@ -1124,9 +1124,13 @@ overflow:scroll;
 	}
 
 
-}
+	.Projects .p_img img {
+		width: 23em !important;
+		height: 16em;
+	}
 
 table{
 	border-collapse: collapse;
 }
 
+}

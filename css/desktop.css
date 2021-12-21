@@ -971,4 +971,15 @@ table{
 	display: flex;
 	flex-direction: row;
 }
+
+
+.Projects .p_img img{
+	width: 37em !important;
+	height: 24em;
+
+}
+
+
+
+
 }
