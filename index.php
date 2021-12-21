@@ -40,7 +40,7 @@ require_once "config_mogolo.php";
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 			
 			
-			
+            
 
 </head>
 
@@ -434,7 +434,7 @@ require_once "config_mogolo.php";
   
   <div class="Projects" id="projects1">
     <h4> Project 1:Bitcoin Investing platform(Smart investa )</h4>
-  <div class="p_img"><img class="project_img" id="first_p" src="img/project2.PNG" /> <img class="project_img" src="img/project1.png" /> </div>
+  <div class="p_img"><img class="project_img" id="first_p" src="img/weball.png" />  </div>
 
     
   <div class="card project_card" style="animation-delay: 0.5s;">
@@ -457,7 +457,7 @@ require_once "config_mogolo.php";
   
   <div class="Projects" id="projects2">
     <h4> Project 2: E-commerce (Online Shopping Website)</h4>
-    <div class="p_img" id="p_img2"> <img class="project_img" id="second_p" src="img/ecommerce.png" > <img  class="project_img"  src="img/ecommerce1.png" ></div>
+    <div class="p_img" id="p_img2"> <img class="project_img" id="second_p" src="img/ecommerce.png" > </div>
     <div class="card project_card" style="animation-delay: 0.5s;">
       <div class="notes_top">Shopping <i class="fa fa-star"></i> </div>
      
@@ -480,7 +480,7 @@ require_once "config_mogolo.php";
 
    
     
-    
+
     </div>
 
    
@@ -544,6 +544,7 @@ require_once "config_mogolo.php";
     
   </div>
   
+>>>>>>> f6eb7a6605d9f56aded79334e1704c00c4fce3c2
   
   </div>
 
