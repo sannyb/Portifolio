@@ -151,15 +151,81 @@ ul li{
 
 /*Starter package*/
 .packages{
-	width:210%;
+	width:110%;
 	flex-direction:row;
  }
  .package{
-	 width: auto;
+	 width:70% ;
 	 padding:3px;
-	 margin:5px 5px 5px 10px;
+	margin-left:0%;
+	}
+	#outofview p,#outofview div,#outofview li,#outofview a,
+	#outofview2 p,#outofview2 div,#outofview2 li,#outofview3 a,#outofview3 p,
+	#outofview3 div,#outofview3 li,#outofview3 a,#outofview4 p,#outofview4 div,#outofview4 li,#outofview4 a,
+	#outofview5 p,#outofview5 div,#outofview5 li,#outofview5 a,#outofview6 p,#outofview6 div,#outofview6 li,#outofview6 a{
+font-size:4px;
+	}
+	#outofview,#outofview4{
+		margin:0px 20px 0px 0px;
+		 width: 15%;
+		 opacity:0.5;
+		 animation:change_slide1 0.5s linear;
+		transform:skewY(-20deg);
+	}
+
+	
+	#outofview5{
+		margin:auto;
+		 width: 15%;
+		 opacity:0.5;
+		 animation:change_slide1 0.5s linear;
+		transform:skewY(-20deg);
+	}
+	#outofview2,#outofview3,#outofview6{
+		 opacity:0.5;
+		margin:0px 0px 0px 20px;
+		 width: 15%;
+		 animation:change_slide 0.5s linear;
+		transform:skewY(20deg);
 	}
 	
+#outofview6{
+		opacity:0.5;
+	   margin:auto;
+		width: 15%;
+		animation:change_slide 0.5s linear;
+	   transform:skewY(20deg);
+   }
+	@keyframes change_slide {
+		from{
+			width:70% ;
+			padding:3px;
+		   margin-left:0%;
+		}
+		to{
+			opacity:0.5;
+			margin:auto;
+			 width: 15%;
+			transform:skewY(20deg);
+		}
+	}
+	
+	@keyframes change_slide1 {
+		from{
+			width:70% ;
+			padding:3px;
+		   margin-left:0%;
+		}
+		to{
+			opacity:0.5;
+			margin:auto;
+			width: 15%;
+			opacity:0.5;
+		   transform:skewY(-20deg);
+	  
+		}
+	}
+
  /*End*/
 
 

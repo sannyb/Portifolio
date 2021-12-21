@@ -453,6 +453,7 @@ footer{
     color:white;
     border-radius:10px;
     overflow:hidden;
+    margin: auto;
     box-shadow:2px 3px 4px black;
 }
 .package_body li{

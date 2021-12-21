@@ -11,6 +11,7 @@ function(){
 });
 
 
+
 //creating cancel button
 
 $(document).ready( function(){
@@ -357,7 +358,7 @@ function view1(target1){
   //=====End=======//
 
   function loading(){
-	  console.log("No errors found in the Weball.co.za");
+
 
 	  document.getElementById("all-content").style.display="block";
 	  document.getElementById("loading").style.display="none";
@@ -365,7 +366,107 @@ function view1(target1){
 	  view1(".prices"); view1(".card_info"); view2(".project_img");  
 view2("#p_img2");
 
+document.getElementById("swiping1").addEventListener('swiped-left', function(e) {
+	swipe(1); //this is to call swipe function, on touch screen phones when swipe left
+  });
+  
+document.getElementById("swiping3").addEventListener('swiped-left', function(e) {
+	swipe2(1); //For third plan of ecommerce
+  });
+  
+document.getElementById("swiping2").addEventListener('swiped-left', function(e) {
+	swipe3(1);//For second plan of Dynamic
+  });
+  document.getElementById("swiping1").addEventListener('swiped-right', function(e) {
+	swipe(-1); //this is to call swipe function, on touch screen phones when swipe right, for first plan static web
+  });
+  
+  document.getElementById("swiping3").addEventListener('swiped-right', function(e) {
+	swipe2(-1);//For third plan of ecommerce
+  });
+  
+  document.getElementById("swiping2").addEventListener('swiped-right', function(e) {
+	swipe3(-1);
+  }); //For second plan of Dynamic
+  
+  console.log("No errors found in the Weball.co.za");
+
   }
+var colors = ["#6600b9","#0b693a","#0b1969","#660b69","#630909","#36ad12","#000000"]; //random colors
+var countcard = 0; //count the number OF CARDS
+ function  swipe(n){
+	let old = countcard;
+	countcard = countcard + n;
+	 
+	  let len = 2;
+	  if (countcard<len && countcard>=0){
+		let card = document.getElementsByClassName("first_card");
+		  if(countcard>=old){
+			card[old].id="outofview2";
+			document.getElementById("outofview2").setAttribute("style", "background-color:" + colors[getRndInteger(0, 6)] + ";");
+			card[countcard].id = "outofview1";
+		  }
+		  else{
+			card[old].id="outofview";
+			document.getElementById("outofview").setAttribute("style", "background-color:" + colors[getRndInteger(0, 6)] + ";");
+
+			card[countcard].id = "outofview1";
+		  }
+      
+	  }
+	  else{
+		  countcard =old;
+	  }
+  }
+  function  swipe2(n){
+	let old = countcard;
+	countcard = countcard + n;
+	 
+	  let len = 2;
+	  if (countcard<len && countcard>=0){
+		let card = document.getElementsByClassName("first_card1");
+		  if(countcard>=old){
+			card[old].id="outofview3";
+			document.getElementById("outofview3").setAttribute("style", "background-color:" + colors[getRndInteger(0, 6)] + ";");
+			card[countcard].id = "outofview1";
+		  }
+		  else{
+			card[old].id="outofview4";
+			document.getElementById("outofview4").setAttribute("style", "background-color:" + colors[getRndInteger(0, 6)] + ";");
+
+			card[countcard].id = "outofview1";
+		  }
+      
+	  }
+	  else{
+		  countcard =old;
+	  }
+  }
+  countcard1 = 1;
+  function  swipe3(n){
+	let old = countcard1;
+	countcard1 = countcard1 + n;
+	 
+	  let len = 3;
+	  if (countcard1<len && countcard1>=0){
+		let card = document.getElementsByClassName("first_card3");
+		  if(countcard1>=old){
+			card[old].id="outofview6";
+			document.getElementById("outofview6").setAttribute("style", "background-color:" + colors[getRndInteger(0, 6)] + ";");
+			card[countcard1].id = "outofview1";
+		  }
+		  else{
+			card[old].id="outofview5";
+			document.getElementById("outofview5").setAttribute("style", "background-color:" + colors[getRndInteger(0, 6)] + ";");
+
+			card[countcard1].id = "outofview1";
+		  }
+      
+	  }
+	  else{
+		  countcard1 =old;
+	  }
+  } 
   //For changing background of Header Bar
 $(window).scroll(function() {
 	var top_of_element = $(".services_section").offset().top;
@@ -389,6 +490,22 @@ $(window).scroll(function() {
   function noti(){
 	document.getElementById("notification").style.display="block";
   }
+ 
+  
+function getRndInteger(min, max) {
+
+	return Math.floor(Math.random() * (max - min) ) + min;
+  
+  } 
+//creating swipe events 
+/*
+document.getElementById("swiping1").addEventListener('swiped-left', function(e) {
+	alert("You swiped left");
+  }); */
+
+  
+
+//End of envents///
 
   
   

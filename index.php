@@ -36,6 +36,7 @@ require_once "config_mogolo.php";
 			
 			      <script src="js/jquery-3.5.1.min.js" ></script>
             <script src="js/portifolio.js" ></script>
+            <script src="js/swiped-events.js" ></script>
             <noscript> Your Browser Does Not Support Javascript </noscript>
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 			
@@ -218,9 +219,9 @@ require_once "config_mogolo.php";
       <div class="first_services">
       
      
-    <div class="packages">
+    <div class="packages" id="swiping1">
 
-      <div class="package">
+      <div class="package first_card" >
         <div class="package_header">Starter Package</div>
         <div class="price">From $50 </div>
         
@@ -238,7 +239,7 @@ require_once "config_mogolo.php";
         <div class="request button"><i class="fa fa-mail">&#128231</i><a href="mailto:info@weball.co.za"> I NEED THIS</a></div>
         </div>
 
-        <div class="package">
+        <div class="package first_card" id="outofview2">
           <div class="package_header"><i class="fa fa-star"></i>Starter Package Pro </div>
           <div class="price">From $80 </div>
          
@@ -294,8 +295,8 @@ require_once "config_mogolo.php";
     <h3>Website Packages:</h3>
     <div class="first_services">
       <p><strong style="color:black">2.Dynamic Websites</strong></p>
-    <div class="packages">
-      <div class="package">
+    <div class="packages " id="swiping2">
+      <div class="package first_card3"  id="outofview5">
         <div class="package_header">Start Up Business </div>
         <div class="price">From $100 </div>
         <div class="package_body">
@@ -311,7 +312,7 @@ require_once "config_mogolo.php";
 
         <div class="request button"><i class="fa fa-mail">&#128231</i><a href="mailto:info@weball.co.za"> I NEED THIS</a></div>
         </div>
-        <div class="package">
+        <div class="package first_card3">
           <div class="package_header">Small Business </div>
           <div class="price">From $150 </div>
           <div class="package_body">
@@ -328,7 +329,7 @@ require_once "config_mogolo.php";
           <div class="request button"><i class="fa fa-mail">&#128231</i><a href="mailto:info@weball.co.za"> I NEED THIS</a></div>
           </div>
 
-          <div class="package">
+          <div class="package first_card3" id="outofview6">
             <div class="package_header"> <i class="fa fa-star"></i>Web Application </div>
             <div class="price">From $170 </div>
             <div class="package_body">
@@ -376,11 +377,11 @@ require_once "config_mogolo.php";
 
 <p class="small_text">Take your Business to next level by selling your products online</p>
 <h3>Website Packages:</h3>
-<div class="first_services">
+<div class="first_services" >
   <p><b>3.E-commerce Website</b></p>
-    <div class="packages">
+    <div class="packages" id="swiping3">
 
-      <div class="package">
+      <div class="package first_card1">
         <div class="package_header">Small Business</div>
         <div class="price">From $200 </div>
         
@@ -399,7 +400,7 @@ require_once "config_mogolo.php";
         <div class="request button"><i class="fa fa-mail">&#128231</i><a href="mailto:info@weball.co.za"> I NEED THIS</a></div>
         </div>
 
-        <div class="package">
+        <div class="package first_card1" id="outofview3">
           <div class="package_header"><i class="fa fa-star"></i>Advanced Business </div>
           <div class="price">From $450 </div>
          
