@@ -22,7 +22,7 @@ require_once "config_mogolo.php";
                          
 
             <meta name="description" name="WebAll Technologies official website">
-            <meta name="keywords" content="WebAll Technologies"/>
+            <meta name="keywords" content="Weball Technologies,weball, Web development,"/>
             <meta name="google-site-verification" content="AdJFP1RxAG3xncYa1WmnNB48V9-Otw42yzTsIdOVjN8" />
             <meta http-equiv="refresh" content="">
             <meta name="author" content="Belmiro Mohlala"/>
@@ -298,29 +298,26 @@ require_once "config_mogolo.php";
   <h3>Our Major Projects:</h3>
   
   <div class="Projects" id="projects1">
-    
-  <div style="background-color: floralwhite;" >
     <h4> Project 1:Bitcoin Investing platform(Smart investa )</h4>
+    
+  <div class="card project_card">
     <p>Our team is known of creating fast scalable and responsive websites, this is one of our work that we are proud of. It is 
       Bitcoin Investing platform that enables people all over the world to invest in Bitcoin with secure and safe platform. </p>
       <p> Our team does not rely on certain programming language, we use the language that is suitable to complete the project</p>
-<div class="p_img"><img class="project_img" id="first_p" src="img/project2.PNG" /> <img class="project_img" src="img/project1.png" /> </div>
-  
-  <div>
-  
-  
-    
-  <p > This website includes database, and is responsive to all 
-    media devices(different screen sizes)</p>
+   <p> This website includes database, and is responsive to all media devices(different screen sizes) </p>
+
   <div ><a   class="button" href="https://www.smartinvesta.co.za">Visit Site+</a></div>
-  </div>
   
+<div class="notes"> <i class="fa fa-angle-right"></i>Notes about project</div>
   </div>
+
+  <div class="p_img"><img class="project_img" id="first_p" src="img/project2.PNG" /> <img class="project_img" src="img/project1.png" /> </div>
+
   </div>
   <hr>
   
   <div class="Projects" >
-    <div style="background-color: floralwhite;" >
+    <div >
       <h4> Project 2: E-commerce (Online Shopping Website)</h4>
       <p>This is the project our team is curretly busy with, we just got started with this project and is one of the
         most interesting projects since Ecommerce is growing exponetially

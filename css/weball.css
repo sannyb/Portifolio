@@ -275,10 +275,12 @@ margin-left: 15px;
     
   }
   /*===End of animation  */
+
   
 
   .about{
       width: 100%;
+      height: 100%;
   }
 
   .contactss {
@@ -291,3 +293,13 @@ margin-left: 15px;
   .contactss p{
       color: black;
   }
+
+
+  .card{
+      background-image: linear-gradient(to bottom right,rgb(5, 5, 255), rgb(4, 19, 88), rgb(15, 64, 110));
+      color: white !important;
+      text-decoration: none;
+      border:1px solid dotted;
+  }
+  
+
