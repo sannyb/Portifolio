@@ -141,31 +141,29 @@ function init(){
 var check1 =0;
  
 var count = 0; // counting the number of characters
+let m = document.getElementsByClassName("letter");
+var myint = setInterval(myname,150);
 
 function slides(){
+	
 let x = document.getElementsByClassName("container");
 
 if (check1>=1){
-		clearInterval(myint);
+	myint = setInterval(myname,150);
 		typing();
-	let m = document.getElementsByClassName("letter");
-	for(let i=0;i<70;i++){
+	for(let i=0;i<m.length;i++){
 		m[i].style.display="none";
 	}
-	var myint = setInterval(myname,150);
 	count = 45;
 	x[1].style.display="block";
 	x[0].style.display="none";
 	check1 = 0;
 }
 else{
-		clearInterval(myint);
 		typing();
-	let m = document.getElementsByClassName("letter");
-	for(let i=0;i<70;i++){
+	for(let i=0;i<m.length;i++){
 		m[i].style.display="none";
 	}
-	var myint = setInterval(myname,150);
 	count = 0;
 	x[0].style.display="block";
 	x[1].style.display="none";
@@ -174,12 +172,14 @@ else{
 
 
 }
-
- function typing(){
 	
- var underscore = setInterval(change,400);
-	 var underscore = setInterval(change1,199);
-	 
+var underscore1,underscore;  
+ function typing(){
+
+underscore= setInterval(change1,199);
+underscore1= setInterval(change,1000);
+
+
  }
  
  function change(){
@@ -189,7 +189,9 @@ else{
 	 x[1].style.display="none";
  }
  function change1(){
+
 	 let x = document.getElementsByClassName("userscore");
+
 	 if(count>19){
 		 x[0].style.display="none";
 	 x[1].style.display="block";
@@ -202,7 +204,9 @@ else{
 	if(count>70){
 		 x[0].style.display="none";
 	 x[1].style.display="none";
-		
+	 clearInterval(myint);
+	 clearInterval(underscore);
+	 clearInterval(underscore1);
 	}
  }
  
@@ -224,6 +228,10 @@ else{
 		
 		let y = document.getElementsByClassName("userscore");
 		y[0].style.display="none";
+		clearInterval(myint);
+		clearInterval(underscore);
+		clearInterval(underscore1);
+	
 		
 	}
 

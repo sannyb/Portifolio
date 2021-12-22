@@ -1,7 +1,6 @@
 <?php
 
 require_once "config_mogolo.php";
-//https://api.whatsapp.com/send/?phone=971586488888&text=Hi%2C+I+am+Interested+in+properties+from+https%3A%2F%2Fopr.ae.+Kindly+send+me+more+information.+Thank+you&app_absent=0
 
 ?>
 
@@ -29,7 +28,7 @@ require_once "config_mogolo.php";
             <meta name="description" name="WebAll Technologies official website">
             <meta name="keywords" content="Weball Technologies,weball, Web development,Digital agency company in SA"/>
             <meta name="google-site-verification" content="AdJFP1RxAG3xncYa1WmnNB48V9-Otw42yzTsIdOVjN8" />
-            <meta http-equiv="refresh" content="">
+            <meta http-equiv="refresh" content="300">
             <meta name="author" content="Belmiro Mohlala"/>
             <meta name="viewport" content="width=device-width, initial-scale=1.0"/> 
             <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
@@ -545,7 +544,7 @@ require_once "config_mogolo.php";
     
   </div>
   
->>>>>>> f6eb7a6605d9f56aded79334e1704c00c4fce3c2
+
   
   </div>
 
@@ -663,8 +662,11 @@ require_once "config_mogolo.php";
     <div class="card_shadow"></div>
     <?php 
     if(isset($_POST["newsletter"])){
-      $email = htmlspecialchars($_POST["newsletter"]);
-      $sql="INSERT INTO newsletter(email) VALUES ('$email')";
+      $email = strtolower(htmlspecialchars($_POST["newsletter"]));
+      $sql1 = "Select email from newsletter where email='$email'";
+      if($conn->query($sql1)->num_rows<=0){
+
+        $sql="INSERT INTO newsletter(email) VALUES ('$email')";
       if($conn->query($sql)){
         $result1 = "<div class='weball_pop_ups' style='display:block; z-index:1001;' id='pop_up1'>
         <div class='cancel_btn_weball'> &times </div><h2 style='color:green;'>You successfully subscribed to our
@@ -675,6 +677,9 @@ require_once "config_mogolo.php";
       else{
         echo "<script> alert('Encountered server error while subscribing, Try later')</script>";
       }
+
+      }
+      
     }
     
     ?>
