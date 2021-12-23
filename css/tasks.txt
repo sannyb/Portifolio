@@ -2,11 +2,13 @@
 //==========TASKS FOR BELMIRO========//
  ===Task 1=====
  *Make animations in portfolio website, for menu and few elements
- *Make advertisement for company on twetter
+ *Make advertisement for company on twitter
  Due date: 23 Dec 2021
 
- ===Task 2=====
+==== Task 2 =====
+
  *Keep track of ads and attend clients, find projects
+ 
  Due date: 31 Dec 2021
 
 
