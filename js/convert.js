@@ -44,6 +44,10 @@ let arr = screen.split('');
         alert("Invalid number "+ screen +" in base 2");
     }
     }
+    else if(to === from){
+        let check3 = validate(screen,from);
+        print(arr1,screen);
+    }
 
     else{
         alert("Your conversion from "+ from+" to "+ to+" is not supported yet") ;
@@ -63,6 +67,8 @@ function print(arr1,screen){
   
 
 }
+
+
 
 function number(value1){
     let screen =  document.getElementById("screen").textContent;
@@ -95,4 +101,6 @@ if(base=="Base 2"){
         return true;
     }
 }
+
+
 }
