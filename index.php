@@ -77,18 +77,21 @@ require_once "config_mogolo.php";
 
 
 <div id="all-content" style="display:none;" >
-  
-  <div class="tablet_hide phone_hide d_menu" ><a href="#services" >SERVICES</a> <span>|</span> 
-    <a href="#projects1" >PROJECTS</a> <span>|</span><a href="#sendmessage">CONTACT US</a><span>|</span><a href="#about" >ABOUT US</a></div>
-
+  <div class="d_menu_border">
+     <div class="tablet_hide phone_hide d_menu" ><a href="#services" >SERVICES</a> <span>|</span> 
+       <a href="#projects1" >PROJECTS</a> <span>|</span><a href="#sendmessage">CONTACT US</a><span>|</span><a href="#about" >ABOUT US</a>
+     </div>
+   </div>
 <div class="get_us"> 
 <a href="mailto:info@weball.co.za">info@weball.co.za</a>
 <a href="#phone" class="phone_hide"> +27 (0)728108533</a>
 </div>
 
-<div class="dev_login " >
-  <a href="#">Developer login</a>
-  </div> 
+<div class="linear-border">
+  <div class="dev_login">
+       <a href="#">Developer login</a>
+  </div>
+</div>
 
 
 <div class="desktop_hide menu-bar">
@@ -96,6 +99,7 @@ require_once "config_mogolo.php";
   <div class="bar"> </div>
   <div class="bar"> </div>
 </div>
+<div class="logo_name"> <span >Web-All Technologies </span></div>
 <header class="header" id="header1">
   </header>
   <div class="whatsaap">
@@ -104,8 +108,10 @@ require_once "config_mogolo.php";
     </div>
 
 <div class="container">
+  <div class="logo_pic"><div class="border_logo"><img alt="logo" src="img/logo1.jpg"> <br>
+ Weball Technologies</div></div>
 
-<div class = "coding" ><img alt="logo" src="img/logo.jpg"> </div>
+<div class = "coding top_color" ></div>
 
 <div class="name">
 
@@ -148,7 +154,9 @@ require_once "config_mogolo.php";
 
 
 <div class="container"  >
-  <div class = "coding" ><img onload="init()" alt="logo1" src="img/logo1.jpg"> </div>
+  <div class = "coding top_color" ></div>
+  <div class="logo_pic"><div class="border_logo"><img alt="logo" src="img/logo.jpg"> <br>
+    Weball Technologies</div></div>
   
   <div class="name">
   
@@ -188,8 +196,12 @@ require_once "config_mogolo.php";
 <!-- services starts-->
 <section class="services_section">
  
-  <h2> GET PROFESSIONAL WEBSITE FROM AS LITTLE AS <b style="color:rgb(206, 73, 73)"> $50</b> </h2>
-  <h1> Services </h1>
+  <h2 ><span id ="promo"> </span> <span class="cursor">i</span> </h2>
+  <div class="greeting"><div class="left">Hey!</div>
+  <div class="small_text">We design and develop from scratch. 
+    Our team also fix bugs in existing websites, or upgrade your existing website to new  design</div>
+</div>
+  <h1 class="hand_font">Services </h1>
 <div class="webdev" >
   <div class="services" id="services"  onscroll="show1()">
       <div class="services-slides">
@@ -209,8 +221,7 @@ require_once "config_mogolo.php";
           <b>
          We are dedicated team of developers aimed to solve any Web problems</b>
         </div>
-        <p class="small_text">We design and develop from scratch <br>
-          Our team also fix bugs in existing websites, or upgrade your existing website to new  design</p>
+       
       <h3>Website Packages:</h3>
       <p><strong style="color:black">1.Static Websites</strong></p>
       <p> All static sites have no databases, dynamic pages can be added with additional cost.
@@ -729,7 +740,7 @@ require_once "config_mogolo.php";
 
       </div>
 <div class="copy"> Copyright 2021 &copy; Weball Technologies </div>
-<div class="copy"> Developed by Weball Team </div>
+<div class="copy"> Developed by Belmiro</div>
    </footer> 
 
 
