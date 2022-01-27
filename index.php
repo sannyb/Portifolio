@@ -89,7 +89,7 @@ require_once "config_mogolo.php";
 
 <div class="linear-border">
   <div class="dev_login">
-       <a href="#">Developer login</a>
+       <a href="#" id="click_me">Developer login</a>
   </div>
 </div>
 

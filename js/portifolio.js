@@ -10,7 +10,21 @@ function(){
 );
 });
 
+$(document).ready( function(){
 
+	$("#click_me" ).click(function () {
+		//alert("I'm working");
+		$.get("get-website.php", function(data) {
+			var json = {
+				html: JSON.stringify(data),
+				delay: 1
+			};
+			alert(json.html);
+			alert("done");
+			});
+	});
+	
+	});
 
 //creating cancel button
 

@@ -5,6 +5,16 @@
  *Make advertisement for company on twitter
  Due date: 23 Dec 2021
 
+ Good day Sir/Madam
+
+I'm Belmiro, a full stack web developer, I'm addict to programming and mathematics. I enjoy solving programming problems using mathematical Algorithm. I'm currently working as freelancer at UPWORK check my profile at https://www.upwork.com/freelancers/~01bd3c195134b4d384 I have registered freelancing company named Weball Technologies, currently I'm the only member in company check it at https://www.weball.co.za. I have solid understanding of web development both back-end and front-end sites I have developed full working web application with advanced features of back-end and front-end.
+Check my github account at https://github.com/Belmiro-webdeveloper to see all my projects.
+
+I would love to work with hard working people.
+
+Kind regards
+Belmiro Mohlala
+
 ==== Task 2 =====
 
  *Keep track of ads and attend clients, find projects
