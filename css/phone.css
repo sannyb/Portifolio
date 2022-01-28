@@ -1059,12 +1059,13 @@ overflow:scroll;
 
 
 	.Projects .p_img img {
-		width: 23em !important;
-		height: 16em;
+		width: 22em !important;
+		height: 15em;
 	}
 
 table{
 	border-collapse: collapse;
 }
+
 
 }

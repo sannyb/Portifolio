@@ -25,7 +25,7 @@ require_once "config_mogolo.php";
             <link href="css/weball.css" rel="stylesheet" type="text/css"  />
            
                          
-
+            <meta name="theme-color" content="black">
             <meta name="description" name="WebAll Technologies official website">
             <meta name="keywords" content="Weball Technologies,weball, Web development,Digital agency company in SA"/>
             <meta name="google-site-verification" content="AdJFP1RxAG3xncYa1WmnNB48V9-Otw42yzTsIdOVjN8" />
@@ -456,7 +456,35 @@ require_once "config_mogolo.php";
   
   
   <div class="Projects" id="projects2">
-    <h4> Project 2: E-commerce (Online Shopping Website)</h4>
+    <h4> Project 2:MB Independence Academy</h4>
+    <div class="p_img" id="p_img2"> <img class="project_img" id="second_p" src="img/mbi-img.png" > </div>
+    <div class="card project_card" style="animation-delay: 0.5s;">
+      <div class="notes_top">Education <i class="fa fa-star"></i> </div>
+     
+      <p>Our deticated team has created this website for blended learning. </p>
+      <p> The Website is simply straight forward and easy to use.So learners can register online so easily and 
+        get online and face to face classes for the subjects included on the website.
+    . </p>
+      <p> <b>Follow these steps</b></p>
+      <ol>
+        <li>Click the link at bottom to <span style="color:rgb(241, 144, 16)">visit site</span></li>
+        <li>Sign up to create an account and then login </li>
+        <li>Choose any subjects you desire and get going!!!</li>
+        </ol>
+    <p > This website includes CMS( Content Management System) and is responsive to all 
+      media devices(different screen sizes)</p>
+
+    <div ><a class="button" href="http://www.weball.co.za/Online/ecommerce/Joseph.php">Visit site+</a></div>
+    <div class="notes"> <i class="fa fa-computer"></i>Notes about project</div>
+    </div>
+
+   
+    
+
+    </div>
+  
+    <div class="Projects" id="projects2">
+    <h4> Project 3: E-commerce (Online Shopping Website)</h4>
     <div class="p_img" id="p_img2"> <img class="project_img" id="second_p" src="img/ecommerce.png" > </div>
     <div class="card project_card" style="animation-delay: 0.5s;">
       <div class="notes_top">Shopping <i class="fa fa-star"></i> </div>

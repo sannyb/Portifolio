@@ -884,6 +884,10 @@ z-index: 0.99;
 .project_card p{
 	color: white;
 }
+.Projects .p_img img {
+    width: 29em !important;
+    height: 19em;
+}
 
 .Projects img{
 	margin:10px;
@@ -972,11 +976,9 @@ table{
 	flex-direction: row;
 }
 
-
-.Projects .p_img img{
-	width: 37em !important;
-	height: 24em;
-
+.Projects .p_img img {
+    width: 29em !important;
+    height: 19em;
 }
 
 
