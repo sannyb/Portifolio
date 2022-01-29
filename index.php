@@ -202,6 +202,8 @@ require_once "config_mogolo.php";
     Our team also fix bugs in existing websites, or upgrade your existing website to new  design</div>
 </div>
   <h1 class="hand_font">Services </h1>
+  <h2 class="hand_font">1. Web design and Web development</h2>
+  <hr style="width:50%; margin:auto;">
 <div class="webdev" >
   <div class="services" id="services"  onscroll="show1()">
       <div class="services-slides">

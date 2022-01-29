@@ -481,9 +481,6 @@ footer{
 }
 
 
-.logo_name{
-	display: none;
-}
 .logo_pic{
     top:3em;
     right:1%;
@@ -905,6 +902,14 @@ footer{
 }
 .greeting .small_text{
     width:40%;
+
+}
+.d_hide{
+	display: none !important;
+}
+.logo_name{
+	color: white !important;
+	font-size: 1.5em;
 
 }
 
