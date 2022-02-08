@@ -10,6 +10,21 @@ function(){
 );
 });
 
+$(document).ready( function(){
+
+	$("#click_me" ).click(function () {
+		//alert("I'm working");
+		$.get("get-website.php", function(data) {
+			var json = {
+				html: JSON.stringify(data),
+				delay: 1
+			};
+			alert(json.html);
+			alert("done");
+			});
+	});
+	
+	});
 
 //creating cancel button
 
@@ -131,6 +146,9 @@ function init(){
 	setInterval(slides,10000);
 	setTimeout(loading,1000);
 	setTimeout(whatsap,5000);
+	let promo1 ="GET PROFESSIONAL WEBSITE FROM AS LITTLE AS $50";
+	let promo = document.getElementById("promo");
+	text(promo1,promo);
 
 
 	
@@ -140,31 +158,29 @@ function init(){
 var check1 =0;
  
 var count = 0; // counting the number of characters
+let m = document.getElementsByClassName("letter");
+var myint = setInterval(myname,150);
 
 function slides(){
+	
 let x = document.getElementsByClassName("container");
 
 if (check1>=1){
-		clearInterval(myint);
+	myint = setInterval(myname,150);
 		typing();
-	let m = document.getElementsByClassName("letter");
-	for(let i=0;i<70;i++){
+	for(let i=0;i<m.length;i++){
 		m[i].style.display="none";
 	}
-	var myint = setInterval(myname,150);
 	count = 45;
 	x[1].style.display="block";
 	x[0].style.display="none";
 	check1 = 0;
 }
 else{
-		clearInterval(myint);
 		typing();
-	let m = document.getElementsByClassName("letter");
-	for(let i=0;i<70;i++){
+	for(let i=0;i<m.length;i++){
 		m[i].style.display="none";
 	}
-	var myint = setInterval(myname,150);
 	count = 0;
 	x[0].style.display="block";
 	x[1].style.display="none";
@@ -173,12 +189,14 @@ else{
 
 
 }
-
- function typing(){
 	
- var underscore = setInterval(change,400);
-	 var underscore = setInterval(change1,199);
-	 
+var underscore1,underscore;  
+ function typing(){
+
+underscore= setInterval(change1,199);
+underscore1= setInterval(change,1000);
+
+
  }
  
  function change(){
@@ -188,7 +206,9 @@ else{
 	 x[1].style.display="none";
  }
  function change1(){
+
 	 let x = document.getElementsByClassName("userscore");
+
 	 if(count>19){
 		 x[0].style.display="none";
 	 x[1].style.display="block";
@@ -201,7 +221,9 @@ else{
 	if(count>70){
 		 x[0].style.display="none";
 	 x[1].style.display="none";
-		
+	 clearInterval(myint);
+	 clearInterval(underscore);
+	 clearInterval(underscore1);
 	}
  }
  
@@ -214,8 +236,7 @@ else{
 
 		x[count].style.display="block";
 		if(count >= 48){
-			x[count].style.color = "black";
-			x[count].style.textShadow = "1px 1px 1px black"
+			x[count].style.color = "white";
 		}
 	
 	}
@@ -223,6 +244,10 @@ else{
 		
 		let y = document.getElementsByClassName("userscore");
 		y[0].style.display="none";
+		clearInterval(myint);
+		clearInterval(underscore);
+		clearInterval(underscore1);
+	
 		
 	}
 
@@ -357,7 +382,7 @@ function view1(target1){
   //=====End=======//
 
   function loading(){
-	  console.log("No errors found in the Weball.co.za");
+
 
 	  document.getElementById("all-content").style.display="block";
 	  document.getElementById("loading").style.display="none";
@@ -365,20 +390,122 @@ function view1(target1){
 	  view1(".prices"); view1(".card_info"); view2(".project_img");  
 view2("#p_img2");
 
+document.getElementById("swiping1").addEventListener('swiped-left', function(e) {
+	swipe(1); //this is to call swipe function, on touch screen phones when swipe left
+  });
+  
+document.getElementById("swiping3").addEventListener('swiped-left', function(e) {
+	swipe2(1); //For third plan of ecommerce
+  });
+  
+document.getElementById("swiping2").addEventListener('swiped-left', function(e) {
+	swipe3(1);//For second plan of Dynamic
+  });
+  document.getElementById("swiping1").addEventListener('swiped-right', function(e) {
+	swipe(-1); //this is to call swipe function, on touch screen phones when swipe right, for first plan static web
+  });
+  
+  document.getElementById("swiping3").addEventListener('swiped-right', function(e) {
+	swipe2(-1);//For third plan of ecommerce
+  });
+  
+  document.getElementById("swiping2").addEventListener('swiped-right', function(e) {
+	swipe3(-1);
+  }); //For second plan of Dynamic
+  
+  console.log("No errors found in the Weball.co.za");
+
   }
+var colors = ["#6600b9","#0b693a","#0b1969","#660b69","#630909","#36ad12","#000000"]; //random colors
+var countcard = 0; //count the number OF CARDS
+ function  swipe(n){
+	let old = countcard;
+	countcard = countcard + n;
+	 
+	  let len = 2;
+	  if (countcard<len && countcard>=0){
+		let card = document.getElementsByClassName("first_card");
+		  if(countcard>=old){
+			card[old].id="outofview2";
+			document.getElementById("outofview2").setAttribute("style", "background-color:" + colors[getRndInteger(0, 6)] + ";");
+			card[countcard].id = "outofview1";
+		  }
+		  else{
+			card[old].id="outofview";
+			document.getElementById("outofview").setAttribute("style", "background-color:" + colors[getRndInteger(0, 6)] + ";");
+
+			card[countcard].id = "outofview1";
+		  }
+      
+	  }
+	  else{
+		  countcard =old;
+	  }
+  }
+  function  swipe2(n){
+	let old = countcard;
+	countcard = countcard + n;
+	 
+	  let len = 2;
+	  if (countcard<len && countcard>=0){
+		let card = document.getElementsByClassName("first_card1");
+		  if(countcard>=old){
+			card[old].id="outofview3";
+			document.getElementById("outofview3").setAttribute("style", "background-color:" + colors[getRndInteger(0, 6)] + ";");
+			card[countcard].id = "outofview1";
+		  }
+		  else{
+			card[old].id="outofview4";
+			document.getElementById("outofview4").setAttribute("style", "background-color:" + colors[getRndInteger(0, 6)] + ";");
+
+			card[countcard].id = "outofview1";
+		  }
+      
+	  }
+	  else{
+		  countcard =old;
+	  }
+  }
+  countcard1 = 1;
+  function  swipe3(n){
+	let old = countcard1;
+	countcard1 = countcard1 + n;
+	 
+	  let len = 3;
+	  if (countcard1<len && countcard1>=0){
+		let card = document.getElementsByClassName("first_card3");
+		  if(countcard1>=old){
+			card[old].id="outofview6";
+			document.getElementById("outofview6").setAttribute("style", "background-color:" + colors[getRndInteger(0, 6)] + ";");
+			card[countcard1].id = "outofview1";
+		  }
+		  else{
+			card[old].id="outofview5";
+			document.getElementById("outofview5").setAttribute("style", "background-color:" + colors[getRndInteger(0, 6)] + ";");
+
+			card[countcard1].id = "outofview1";
+		  }
+      
+	  }
+	  else{
+		  countcard1 =old;
+	  }
+  } 
   //For changing background of Header Bar
 $(window).scroll(function() {
 	var top_of_element = $(".services_section").offset().top;
 	var bottom_of_screen = $(window).scrollTop();
 	if ((bottom_of_screen > top_of_element) ){
-	  $(".dev_login").attr("id","dev_login_phone");
-	  $(".d_menu").attr("id","d_menu");
+	  $(".linear-border").attr("id","dev_login_phone");
+	  $(".d_menu_border").attr("id","d_menu");
+	  $(".logo_name").attr("style","display:none");
 	  $(".header").attr("id","header");
 	} 
 	else {
-		$(".d_menu").attr("id","d_menu1");
+		$(".d_menu_border").attr("id","d_menu1");
 		$(".header").attr("id","header1");
-		$(".dev_login").attr("id","dev_login_phone1");
+		$(".linear-border").attr("id","dev_login_phone1");
+		$(".logo_name").attr("style","display:block");
 	}
   });
   //=====End====//
@@ -389,6 +516,54 @@ $(window).scroll(function() {
   function noti(){
 	document.getElementById("notification").style.display="block";
   }
+ 
+  
+function getRndInteger(min, max) {
+
+	return Math.floor(Math.random() * (max - min) ) + min;
+  
+  } 
+//creating swipe events 
+/*
+document.getElementById("swiping1").addEventListener('swiped-left', function(e) {
+	alert("You swiped left");
+  }); */
+
+  
+
+//End of envents///
+var type;
+function text(value,target){
+let arr = value.split('');
+//type = setInterval(display(arr,target),100);
+type = setInterval(function(){display(arr,target)}, 300);
+
+}
+var idenx =0;
+var text1 = "";
+function display(arr,target){
+	if(idenx<arr.length){
+		text1 = text1 + arr[idenx];
+		idenx++;
+		target.innerHTML = text1;
+	}
+	else{
+		clearInterval(type);
+		idenx=0;
+		document.getElementsByClassName("cursor")[0].style.display="none";
+	}
+
+}
+
+function erase(){
+	if(idenx>=0){
+		text1 = text1.pop();
+	}
+	else{
+		clearInterval(type);
+	}
+	idenx = text1.length;
+}
 
   
   

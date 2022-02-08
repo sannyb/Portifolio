@@ -1,0 +1,30 @@
+
+//==========TASKS FOR BELMIRO========//
+ ===Task 1=====
+ *Make animations in portfolio website, for menu and few elements
+ *Make advertisement for company on twitter
+ Due date: 23 Dec 2021
+
+==== Task 2 =====
+
+ *Keep track of ads and attend clients, find projects
+ 
+ Due date: 31 Dec 2021
+
+
+
+
+ //==========TASKS FOR SUNNYBOY========//
+ ===Task 1=====
+
+ *Please fix ecommerce website, make sure the items displays nice, the footers looks fine
+
+ *Fix the design of header in ecommerce for desktop make, Import database named ecommerce.sql(create database name it ecommerce first
+    localhost/phpmyadmin and Import ecommerce.sql to this database) in order to login,
+    then you can create account and login with that account to see how avatar displays 
+
+ Due date: 24 Dec 2021
+
+ ===Task 2=====
+ *Need to create some basic animations for ecommerce site, we will discuss this 
+ Due date: 26 Dec 2021
