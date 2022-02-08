@@ -251,10 +251,6 @@ body{
 	background-image: linear-gradient(45deg, white, #af4261);
 	background-size: 100%;
 	background-repeat: repeat;
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-	-moz-background-clip: text;
-	-moz-text-fill-color:transparent;
 }
 	
 	.welcome .logo img{
@@ -263,21 +259,6 @@ body{
 		height:50px;
 	}
 	
-	
-	.container{
-		
-		width:100%;
-		margin:0;
-		/*background-image:linear-gradient(#cccccc,rgba(0,0,0,0.8));
-		background-image:url("img/rock1.PNG");*/
-		position:fixed;
-		top:-1em;
-		background-color: white;
-		z-index:-1;
-		animation:weball 3s;
-		-webkit-animation:weball 3s;
-		
-	}
 	
 .name{
 	width:100%;
@@ -320,7 +301,6 @@ body{
 	}
 	
 .found{
-
     font-size: 18px;
     left:8%;
     top:1em;
@@ -449,18 +429,8 @@ body{
 	.contact_details2 li:hover{
 		opacity:0.5;
 	}
-	.coding img{
-		height:auto;
-		position: absolute;
-		top:-10em;
-		right:0em;
-		opacity: 0.8;
-	}
 	
 	
-	.coding img{
-		width:100%;
-	}
 	
 .newsletter{
 	width:50%;
@@ -509,12 +479,24 @@ footer{
     width: 10px;
 	background-color: #afe7f1;
 }
+
+
+.logo_pic{
+    top:3em;
+    right:1%;
+
+}
+.border_logo img{
+    width: 4em;
+    height:auto;
+    border-radius:3px;
+}
 	
 /*developer login style*/
-.dev_login{
+.linear-border{
     top:0px;
     right:4px;
-    padding: 4px;
+    padding: 2px;
 	z-index: 100;
 	position:fixed;
  
@@ -615,35 +597,8 @@ footer{
 	.btn-right:hover{
 		opacity:0.5;
 	}
-	@keyframes weball{
-		
-		from{
-			
-			opacity:0;
-		}
-		to{
-			opacity:1;
-		}
-	}
-	
-	@-webkit-keyframes weball{
-		
-		from{
-			
-			opacity:0;
-		}
-		to{
-			opacity:1;
-		}
-	}
-	
-	
-	.container>div{
-		width:80%;
-		margin:auto;
-		padding:10px;
-	}
-	
+
+
 	
 	.userscore{
 		color:red;
@@ -666,33 +621,10 @@ footer{
 	}
 	
 	.letter{
-		/*animation:letter 1s;
-		-webkit-animation:letter 1s;*/
-		display:none;
 		font-size:1em;
-		font-family:MyFont;
-		color:white;
 	}
 	
-	@keyframes letter{
-		from{
-		opacity:0;
-		
-		}
-		to{
-			opacity:1;
-		}
-	}
-	
-	@-webkit-keyframes letter{
-		from{
-			opacity:0;
-			
-		}
-		to{
-			opacity:1;
-		}
-	} 
+
 	
 	.typingname1{
 		display:flex;
@@ -962,4 +894,23 @@ footer{
 		height: 24em;
 	
 	}
+
+	
+.greeting .left{
+    width:15%;
+
+}
+.greeting .small_text{
+    width:40%;
+
+}
+.d_hide{
+	display: none !important;
+}
+.logo_name{
+	color: white !important;
+	font-size: 1.5em;
+
+}
+
 }

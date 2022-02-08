@@ -132,34 +132,92 @@ ul li{
 	background-image:linear-gradient(to bottom right,hsl(239, 97%, 46%) ,red)
 }
 
-.coding img{
-	height:auto;
-	position: absolute;
-	top:-6em;
-	right:0em;
-	opacity: 0.9;
-	z-index: 0.5;
-}
-
 .name{
 	width:100%;
 	height:10em;
 	position: absolute;
 	top:8px;
+	left:-5px;
 	z-index: 1;
 }
 
 /*Starter package*/
 .packages{
-	width:210%;
+	width:110%;
 	flex-direction:row;
  }
  .package{
-	 width: auto;
+	 width:70% ;
 	 padding:3px;
-	 margin:5px 5px 5px 10px;
+	margin-left:0%;
+	}
+	#outofview p,#outofview div,#outofview li,#outofview a,
+	#outofview2 p,#outofview2 div,#outofview2 li,#outofview3 a,#outofview3 p,
+	#outofview3 div,#outofview3 li,#outofview3 a,#outofview4 p,#outofview4 div,#outofview4 li,#outofview4 a,
+	#outofview5 p,#outofview5 div,#outofview5 li,#outofview5 a,#outofview6 p,#outofview6 div,#outofview6 li,#outofview6 a{
+font-size:4px;
+	}
+	#outofview,#outofview4{
+		margin:0px 20px 0px 0px;
+		 width: 15%;
+		 opacity:0.5;
+		 animation:change_slide1 0.5s linear;
+		transform:skewY(-20deg);
+	}
+
+	
+	#outofview5{
+		margin:auto;
+		 width: 15%;
+		 opacity:0.5;
+		 animation:change_slide1 0.5s linear;
+		transform:skewY(-20deg);
+	}
+	#outofview2,#outofview3,#outofview6{
+		 opacity:0.5;
+		margin:0px 0px 0px 20px;
+		 width: 15%;
+		 animation:change_slide 0.5s linear;
+		transform:skewY(20deg);
 	}
 	
+#outofview6{
+		opacity:0.5;
+	   margin:auto;
+		width: 15%;
+		animation:change_slide 0.5s linear;
+	   transform:skewY(20deg);
+   }
+	@keyframes change_slide {
+		from{
+			width:70% ;
+			padding:3px;
+		   margin-left:0%;
+		}
+		to{
+			opacity:0.5;
+			margin:auto;
+			 width: 15%;
+			transform:skewY(20deg);
+		}
+	}
+	
+	@keyframes change_slide1 {
+		from{
+			width:70% ;
+			padding:3px;
+		   margin-left:0%;
+		}
+		to{
+			opacity:0.5;
+			margin:auto;
+			width: 15%;
+			opacity:0.5;
+		   transform:skewY(-20deg);
+	  
+		}
+	}
+
  /*End*/
 
 
@@ -176,12 +234,12 @@ ul li{
 }
 
 .Projects  .project_img{
-	width: 60%;
+	
 	margin:10px;
 	align-items: center;
 	margin-left: auto;
 	margin-right: auto;
-	height: 8em;
+	
 	
 	border-radius: 8px;
  }
@@ -224,14 +282,6 @@ ul li{
 }
 
 
-#first_p{
-	width:20%;
-
- }
- 
- #second_p{
-	width:20%;
- }
  
  
 .p_img{
@@ -252,10 +302,6 @@ ul li{
 .Projects h4{
 	font-size:16px;
 }
-.coding img{
-	width:100%;
-}
-
  
 .joy_pic{
 	opacity: 0.1;
@@ -285,10 +331,10 @@ ul li{
 }
 
 /*developer login style*/
-.dev_login{
+.linear-border{
     top:5.6em;
     right:4px;
-    padding: 3px;
+    padding: 2px;
 	z-index: 100;
 	position:absolute;
     
@@ -299,7 +345,7 @@ ul li{
    opacity:0.7;
 }
 #dev_login_phone{
-	top:5px;
+	top:-4px;
 	position:fixed;
 }
 .dev_login>a{
@@ -703,16 +749,6 @@ footer{
 }
 
 
-.container{
-	
-	width:100%;
-	margin:0;
-	position:fixed;
-	top:0em;
-	animation:weball 3s;
-	-webkit-animation:weball 3s;
-	
-}
 .webdev{
 	padding:10px;
 }
@@ -865,36 +901,29 @@ border:0.5px dotted black;
 	opacity:0.5;
 }
 
-@keyframes weball{
-	
-	from{
-		
-		opacity:0;
-	}
-	to{
-		opacity:1;
-	}
+.logo_name{
+	font-size:17px;
+	font-weight: bold;
+	display:flex;
+	flex-direction: row;
+	position:fixed;
+	right:1%;
+	top:5px;
+	z-index: 100;
 }
 
-@-webkit-keyframes weball{
-	
-	from{
-		
-		opacity:0;
-	}
-	to{
-		opacity:1;
-	}
+.logo_name span{
+	color:white;
+	margin-right: 3px;
 }
 
 
-.container>div{
-	width:95%;
-	margin:auto;
-	padding:5px;
+.logo_pic{
+	display: none;
+    top:3em;
+    right:1%;
+
 }
-
-
 .userscore{
 	color:red;
 }
@@ -911,11 +940,7 @@ border:0.5px dotted black;
 }
 
 .letter{
-	display:none;
-	font-family:MyFont;
 	font-size:22px;
-	color:white;
-	text-shadow: 1px 1px 3px black;
 	font-weight: bold;
 	opacity: 1;
 }
@@ -1067,5 +1092,14 @@ table{
 	border-collapse: collapse;
 }
 
+
+.greeting .left{
+    width:15%;
+
+}
+.greeting .small_text{
+    width:85%;
+
+}
 
 }

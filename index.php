@@ -1,13 +1,12 @@
 <?php
 
 require_once "config_mogolo.php";
-//https://api.whatsapp.com/send/?phone=971586488888&text=Hi%2C+I+am+Interested+in+properties+from+https%3A%2F%2Fopr.ae.+Kindly+send+me+more+information.+Thank+you&app_absent=0
 
 ?>
 
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
 
 <head>
  <title>WebAll Technologies</title>
@@ -19,25 +18,29 @@ require_once "config_mogolo.php";
 
 
             <link href="css/phone.css" rel="stylesheet" type ="text/css" />
-            <link rel="shortcut icon" href="img/weball.PNG">
+            <link rel="shortcut icon" href="img/weball.PNG"/>
             <link href="css/desktop.css" rel="stylesheet" type ="text/css" />
             <link href="css/tablet.css" rel="stylesheet" type="text/css"  />
             <link href="css/weball.css" rel="stylesheet" type="text/css"  />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
            
                          
+
             <meta name="theme-color" content="black">
             <meta name="description" name="WebAll Technologies official website">
+
             <meta name="keywords" content="Weball Technologies,weball, Web development,Digital agency company in SA"/>
             <meta name="google-site-verification" content="AdJFP1RxAG3xncYa1WmnNB48V9-Otw42yzTsIdOVjN8" />
-            <meta http-equiv="refresh" content="">
+            <meta http-equiv="refresh" content="300"/>
             <meta name="author" content="Belmiro Mohlala"/>
             <meta name="viewport" content="width=device-width, initial-scale=1.0"/> 
             <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
 			
-			      <script src="js/jquery-3.5.1.min.js" ></script>
-            <script src="js/portifolio.js" ></script>
-            <noscript> Your Browser Does Not Support Javascript </noscript>
-            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+			      <script  src="js/jquery-3.5.1.min.js" ></script>
+            <script  src="js/portifolio.js" ></script>
+            <script src="js/swiped-events.js" ></script>
+           
+          
 			
 			
             
@@ -76,18 +79,21 @@ require_once "config_mogolo.php";
 
 
 <div id="all-content" style="display:none;" >
-  
-  <div class="tablet_hide phone_hide d_menu" ><a href="#services" >SERVICES</a> <span>|</span> 
-    <a href="#projects1" >PROJECTS</a> <span>|</span><a href="#sendmessage">CONTACT US</a><span>|</span><a href="#about" >ABOUT US</a></div>
-
+  <div class="d_menu_border">
+     <div class="tablet_hide phone_hide d_menu" ><a href="#services" >SERVICES</a> <span>|</span> 
+       <a href="#projects1" >PROJECTS</a> <span>|</span><a href="#sendmessage">CONTACT US</a><span>|</span><a href="#about" >ABOUT US</a>
+     </div>
+   </div>
 <div class="get_us"> 
 <a href="mailto:info@weball.co.za">info@weball.co.za</a>
 <a href="#phone" class="phone_hide"> +27 (0)728108533</a>
 </div>
 
-<div class="dev_login " >
-  <a href="#">Developer login</a>
-  </div> 
+<div class="linear-border">
+  <div class="dev_login">
+       <a href="#" id="click_me">Developer login</a>
+  </div>
+</div>
 
 
 <div class="desktop_hide menu-bar">
@@ -95,16 +101,19 @@ require_once "config_mogolo.php";
   <div class="bar"> </div>
   <div class="bar"> </div>
 </div>
+<div class="logo_name"> <span >Web-All Technologies </span></div>
 <header class="header" id="header1">
   </header>
   <div class="whatsaap">
     <span class="notification" id="notification">1</span>
-    <a href="whatsapp://send?text=Hi, I have question!&phone=+27728108533"><i class="fa fa-whatsapp" id="whatsaap"></i></a>
+    <a href="whatsapp://send?text=Hi!&phone=+27728108533"><i class="fa fa-whatsapp" id="whatsaap"></i></a>
     </div>
 
 <div class="container">
+  <div class="logo_pic"><div class="border_logo"><img alt="logo" src="img/logo1.jpg"> <br>
+ Weball Technologies</div></div>
 
-<div class = "coding" ><img src="img/logo.jpg"> </div>
+<div class = "coding top_color" ></div>
 
 <div class="name">
 
@@ -147,7 +156,9 @@ require_once "config_mogolo.php";
 
 
 <div class="container"  >
-  <div class = "coding" ><img onload="init()" src="img/logo1.jpg"> </div>
+  <div class = "coding top_color" ></div>
+  <div class="logo_pic"><div class="border_logo"><img alt="logo" src="img/logo.jpg"> <br>
+    Weball Technologies</div></div>
   
   <div class="name">
   
@@ -157,7 +168,7 @@ require_once "config_mogolo.php";
   <div class="typingname">
   
      <div class="typingname1"> <span class="letter">We</span><?php echo $space?><span class="letter"> are</span> <?php echo $space?><span class="letter">Te</span><span class="letter">ch</span><span class="letter">no</span><span class="letter">lo</span><span class="letter">gy</span><?php echo $space?><span class="letter">You</span><?php echo $space?><span class="letter">Ne 
-           </span></span><span class="letter">ed</span><?php echo $space?> 
+           </span><span class="letter">ed</span><?php echo $space?> 
             
      </div>
   
@@ -187,8 +198,14 @@ require_once "config_mogolo.php";
 <!-- services starts-->
 <section class="services_section">
  
-  <h2> GET PROFESSIONAL WEBSITE FROM AS LITTLE AS <b style="color:rgb(206, 73, 73)"> $50</b> </h2>
-  <h1> Services </h1>
+  <h2 ><span id ="promo"> </span> <span class="cursor">i</span> </h2>
+  <div class="greeting"><div class="left">Hey!</div>
+  <div class="small_text">We design and develop from scratch. 
+    Our team also fix bugs in existing websites, or upgrade your existing website to new  design</div>
+</div>
+  <h1 class="hand_font">Services </h1>
+  <h2 class="hand_font">1. Web design and Web development</h2>
+  <hr style="width:50%; margin:auto;">
 <div class="webdev" >
   <div class="services" id="services"  onscroll="show1()">
       <div class="services-slides">
@@ -208,8 +225,7 @@ require_once "config_mogolo.php";
           <b>
          We are dedicated team of developers aimed to solve any Web problems</b>
         </div>
-        <p class="small_text">We design and develop from scratch <br>
-          Our team also fix bugs in existing websites, or upgrade your existing website to new  design</p>
+       
       <h3>Website Packages:</h3>
       <p><strong style="color:black">1.Static Websites</strong></p>
       <p> All static sites have no databases, dynamic pages can be added with additional cost.
@@ -218,9 +234,9 @@ require_once "config_mogolo.php";
       <div class="first_services">
       
      
-    <div class="packages">
+    <div class="packages" id="swiping1">
 
-      <div class="package">
+      <div class="package first_card" >
         <div class="package_header">Starter Package</div>
         <div class="price">From $50 </div>
         
@@ -235,10 +251,10 @@ require_once "config_mogolo.php";
       </div>
       <p> Additional of $4/pm for maintenance</p>
 
-        <div class="request button"><i class="fa fa-mail">&#128231</i><a href="mailto:info@weball.co.za"> I NEED THIS</a></div>
+        <div class="request button"><i class="fa fa-mail">&#128231;</i><a href="mailto:info@weball.co.za"> I NEED THIS</a></div>
         </div>
 
-        <div class="package">
+        <div class="package first_card" id="outofview2">
           <div class="package_header"><i class="fa fa-star"></i>Starter Package Pro </div>
           <div class="price">From $80 </div>
          
@@ -252,7 +268,7 @@ require_once "config_mogolo.php";
             </ol>
         </div>
         <p> Additional of $4/pm for maintenance</p>
-        <div class="request button"><i class="fa fa-mail">&#128231</i><a href="mailto:info@weball.co.za"> I NEED THIS</a></div>
+        <div class="request button"><i class="fa fa-mail">&#128231;</i><a href="mailto:info@weball.co.za"> I NEED THIS</a></div>
           </div>
          
       </div>
@@ -294,8 +310,8 @@ require_once "config_mogolo.php";
     <h3>Website Packages:</h3>
     <div class="first_services">
       <p><strong style="color:black">2.Dynamic Websites</strong></p>
-    <div class="packages">
-      <div class="package">
+    <div class="packages " id="swiping2">
+      <div class="package first_card3"  id="outofview5">
         <div class="package_header">Start Up Business </div>
         <div class="price">From $100 </div>
         <div class="package_body">
@@ -309,9 +325,9 @@ require_once "config_mogolo.php";
       </div>
       <p> Additional of $10/pm for maintenance</p>
 
-        <div class="request button"><i class="fa fa-mail">&#128231</i><a href="mailto:info@weball.co.za"> I NEED THIS</a></div>
+        <div class="request button"><i class="fa fa-mail">&#128231;</i><a href="mailto:info@weball.co.za"> I NEED THIS</a></div>
         </div>
-        <div class="package">
+        <div class="package first_card3">
           <div class="package_header">Small Business </div>
           <div class="price">From $150 </div>
           <div class="package_body">
@@ -325,10 +341,10 @@ require_once "config_mogolo.php";
         </div>
         <p> Additional of $10/pm for maintenance</p>
   
-          <div class="request button"><i class="fa fa-mail">&#128231</i><a href="mailto:info@weball.co.za"> I NEED THIS</a></div>
+          <div class="request button"><i class="fa fa-mail">&#128231;</i><a href="mailto:info@weball.co.za"> I NEED THIS</a></div>
           </div>
 
-          <div class="package">
+          <div class="package first_card3" id="outofview6">
             <div class="package_header"> <i class="fa fa-star"></i>Web Application </div>
             <div class="price">From $170 </div>
             <div class="package_body">
@@ -342,7 +358,7 @@ require_once "config_mogolo.php";
           </div>
           <p> Additional of $10/pm for maintenance</p>
     
-            <div class="request button"><i class="fa fa-mail">&#128231</i><a href="mailto:info@weball.co.za"> I NEED THIS</a></div>
+            <div class="request button"><i class="fa fa-mail">&#128231;</i><a href="mailto:info@weball.co.za"> I NEED THIS</a></div>
             </div>
         
       </div>
@@ -376,11 +392,11 @@ require_once "config_mogolo.php";
 
 <p class="small_text">Take your Business to next level by selling your products online</p>
 <h3>Website Packages:</h3>
-<div class="first_services">
+<div class="first_services" >
   <p><b>3.E-commerce Website</b></p>
-    <div class="packages">
+    <div class="packages" id="swiping3">
 
-      <div class="package">
+      <div class="package first_card1">
         <div class="package_header">Small Business</div>
         <div class="price">From $200 </div>
         
@@ -396,10 +412,10 @@ require_once "config_mogolo.php";
       </div>
       <p> Additional of $12/pm for maintenance</p>
 
-        <div class="request button"><i class="fa fa-mail">&#128231</i><a href="mailto:info@weball.co.za"> I NEED THIS</a></div>
+        <div class="request button"><i class="fa fa-mail">&#128231;</i><a href="mailto:info@weball.co.za"> I NEED THIS</a></div>
         </div>
 
-        <div class="package">
+        <div class="package first_card1" id="outofview3">
           <div class="package_header"><i class="fa fa-star"></i>Advanced Business </div>
           <div class="price">From $450 </div>
          
@@ -414,7 +430,7 @@ require_once "config_mogolo.php";
             </ol>
         </div>
         <p> Additional of $20/pm for maintenance</p>
-        <div class="request button"><i class="fa fa-mail">&#128231</i><a href="mailto:info@weball.co.za"> I NEED THIS</a></div>
+        <div class="request button"><i class="fa fa-mail">&#128231;</i><a href="mailto:info@weball.co.za"> I NEED THIS</a></div>
           </div>
          
       </div>
@@ -434,7 +450,7 @@ require_once "config_mogolo.php";
   
   <div class="Projects" id="projects1">
     <h4> Project 1:Bitcoin Investing platform(Smart investa )</h4>
-  <div class="p_img"><img class="project_img" id="first_p" src="img/weball.png" />  </div>
+  <div class="p_img"><img alt="Bitcoin" class="project_img" id="first_p" src="img/weball.png" />  </div>
 
     
   <div class="card project_card" style="animation-delay: 0.5s;">
@@ -456,6 +472,7 @@ require_once "config_mogolo.php";
   
   
   <div class="Projects" id="projects2">
+
     <h4> Project 2:MB Independence Academy</h4>
     <div class="p_img" id="p_img2"> <img class="project_img" id="second_p" src="img/mbi-img.png" > </div>
     <div class="card project_card" style="animation-delay: 0.5s;">
@@ -463,8 +480,7 @@ require_once "config_mogolo.php";
      
       <p>Our deticated team has created this website for blended learning. </p>
       <p> The Website is simply straight forward and easy to use.So learners can register online so easily and 
-        get online and face to face classes for the subjects included on the website.
-    . </p>
+        get online and face to face classes for the subjects included on the website.</p>
       <p> <b>Follow these steps</b></p>
       <ol>
         <li>Click the link at bottom to <span style="color:rgb(241, 144, 16)">visit site</span></li>
@@ -531,7 +547,7 @@ require_once "config_mogolo.php";
                 We encrypt your login sytems and banking sytems 
             </p>
           <div class="like notes">
-            <span class="like_number">506</span> <i class="fa fa-thumbs-up"aria-hidden="true"></i>
+            <span class="like_number">506</span> <i class="fa fa-thumbs-up" aria-hidden="true"></i>
             <span class="like_number">4</span><i class="fa fa-thumbs-down" ></i>
           </div>
             </div>
@@ -546,7 +562,7 @@ require_once "config_mogolo.php";
                 We reply within 24 hours
             </p>
           <div class="like notes">
-            <span class="like_number">46</span> <i class="fa fa-thumbs-up"aria-hidden="true"></i>
+            <span class="like_number">46</span> <i class="fa fa-thumbs-up" aria-hidden="true"></i>
             <span class="like_number">2</span><i class="fa fa-thumbs-down" ></i>
           </div>
             </div>
@@ -560,7 +576,7 @@ require_once "config_mogolo.php";
                 bring on their ideas and we integrate them technically.
             </p>
           <div class="like notes">
-            <span class="like_number">102</span> <i class="fa fa-thumbs-up"aria-hidden="true"></i>
+            <span class="like_number">102</span> <i class="fa fa-thumbs-up" aria-hidden="true"></i>
             <span class="like_number">0</span><i class="fa fa-thumbs-down" ></i>
           </div>
             </div>
@@ -572,7 +588,7 @@ require_once "config_mogolo.php";
     
   </div>
   
->>>>>>> f6eb7a6605d9f56aded79334e1704c00c4fce3c2
+
   
   </div>
 
@@ -596,18 +612,17 @@ require_once "config_mogolo.php";
       <div class="card_info"><p><b>CONTACT US</b></p>
         <p><i class="fa fa-phone"></i> <span class="phone_hide">Phone</span>: (+27) 728 108 533</p>
         <p><i class="fa fa-whatsapp" style="color:green;"></i><span class="phone_hide"> WhatsApp:</span> (+27) 728 108 533</p>
-        <p><i class="fa fa" style="color:yellow">&#128231</i><span class="phone_hide"> Email:</span> <a href="mailto:info@weball.co.za">info@weball.co.za</a></p>
+        <p><i class="fa fa" style="color:yellow">&#128231;</i><span class="phone_hide"> Email:</span> <a href="mailto:info@weball.co.za">info@weball.co.za</a></p>
 
 
 
       </div>
       <div id="sendmessage" class="sendmessage"><p><b>SEND MESSAGE</b></p>
         <br>
-      <form method="POST" action="" id="contact">
+      <form method="POST" action="#" id="contact">
         <p><input  type="text" name="email1" placeholder="Enter Your Email" required></p>
       <textarea class="tablet_hide" cols="37" rows="4" name="message1" placeholder="Type your message here" ></textarea>
         <textarea class="desktop_hide phone_hide" cols="60" rows="8" name="message2" placeholder="Type your message here" ></textarea>
-      </textarea>
       <input type="submit" value="Send" >
       </form>
       <?php
@@ -690,8 +705,11 @@ require_once "config_mogolo.php";
     <div class="card_shadow"></div>
     <?php 
     if(isset($_POST["newsletter"])){
-      $email = htmlspecialchars($_POST["newsletter"]);
-      $sql="INSERT INTO newsletter(email) VALUES ('$email')";
+      $email = strtolower(htmlspecialchars($_POST["newsletter"]));
+      $sql1 = "Select email from newsletter where email='$email'";
+      if($conn->query($sql1)->num_rows<=0){
+
+        $sql="INSERT INTO newsletter(email) VALUES ('$email')";
       if($conn->query($sql)){
         $result1 = "<div class='weball_pop_ups' style='display:block; z-index:1001;' id='pop_up1'>
         <div class='cancel_btn_weball'> &times </div><h2 style='color:green;'>You successfully subscribed to our
@@ -702,6 +720,9 @@ require_once "config_mogolo.php";
       else{
         echo "<script> alert('Encountered server error while subscribing, Try later')</script>";
       }
+
+      }
+      
     }
     
     ?>
@@ -751,7 +772,7 @@ require_once "config_mogolo.php";
 
       </div>
 <div class="copy"> Copyright 2021 &copy; Weball Technologies </div>
-<div class="copy"> Developed by Weball Team </div>
+<div class="copy"> Developed by Belmiro</div>
    </footer> 
 
 
