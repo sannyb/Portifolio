@@ -344,15 +344,14 @@ function view1(target1){
 	  var top_of_element = $(target1).offset().top;
 	  var bottom_of_screen = $(window).scrollTop() + $(window).innerHeight();
 	  if ((bottom_of_screen > top_of_element) ){
-		 $(target1).addClass("fadeup");
-		 setTimeout(opas(target1),50);
-		
+		$(target1).removeClass("opacity-0");
+		 $(target1).addClass("fadeup opacity-1");
 	  } 
+	  else{
+		$(target1).addClass("opacity-0");
+	  }
 	 
 	});
-  }
-  function opas(target1){
-	$(target1).attr("style","opacity:1");
   }
   
   
@@ -361,9 +360,13 @@ function view1(target1){
 	  var top_of_element = $(target1).offset().top;
 	  var bottom_of_screen = $(window).scrollTop() + $(window).innerHeight();
 	  if ((bottom_of_screen > top_of_element) ){
-		 $(target1).addClass("faderight"); 
-	   setTimeout(opas(target1),50);
+		$(target1).removeClass("opacity-0");
+		 $(target1).addClass("faderight opacity-1"); 
 	  } 
+
+	  else{
+		$(target1).addClass("opacity-0");
+	  }
 	 
 	});
   }
@@ -373,9 +376,12 @@ function view1(target1){
 	  var top_of_element = $(target1).offset().top;
 	  var bottom_of_screen = $(window).scrollTop() + $(window).innerHeight();
 	  if ((bottom_of_screen > top_of_element) ){
-		 $(target1).addClass("fadeout"); 
-		 setTimeout(opas(target1),50);
+		$(target1).removeClass("opacity-0");
+		 $(target1).addClass("fadeout opacity-1"); 
 	  } 
+	  else{
+		$(target1).addClass("opacity-0");
+	  }
 	
 	});
   }

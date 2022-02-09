@@ -108,12 +108,12 @@ require_once "config_mogolo.php";
     </div>
 
 <div class="container">
-  <div class="logo_pic"><div class="border_logo"><img alt="logo" src="img/logo1.jpg"> <br>
+  <div class="logo_pic" ><div class="border_logo"><img alt="logo" src="img/logo1.jpg"> <br>
  Weball Technologies</div></div>
 
 <div class = "coding top_color" ></div>
 
-<div class="name">
+<div class="name" >
 
 
 <br>
@@ -197,12 +197,35 @@ require_once "config_mogolo.php";
 <section class="services_section">
  
   <h2 ><span id ="promo"> </span> <span class="cursor">i</span> </h2>
-  <div class="greeting"><div class="left">Hey!</div>
+  <div class="greeting" id="logo_pic"><div class="left">Hey!</div>
   <div class="small_text">We design and develop from scratch. 
     Our team also fix bugs in existing websites, or upgrade your existing website to new  design</div>
 </div>
   <h1 class="hand_font">Services </h1>
-  <h2 class="hand_font">1. Web design and Web development</h2>
+  <div class="services_package" >
+    <div class="gradient-border" >
+      <div class="bg-light">
+        <span class="float-left">1.</span>
+       Web Development
+      </div>
+     
+    </div>
+    <div class="gradient-border">
+      <div class="bg-light">
+        <span class="float-left">2.</span>
+
+       App Development
+      </div>
+    </div>
+    <div class="gradient-border">
+      <div class="bg-light">
+        <span class="float-left">3.</span>
+
+       Graphic Design
+      </div>
+    </div>
+  </div>
+  <h2 class="hand_font">1. Web development Packages</h2>
   <hr style="width:50%; margin:auto;">
 <div class="webdev" >
   <div class="services" id="services"  onscroll="show1()">
@@ -219,10 +242,7 @@ require_once "config_mogolo.php";
       <!--<p  class="decoration" style="color:black; font-family:MyFont;"><strong>OUR AIM IS TO HELP AMBITOUS BUSINESS MAKE MORE 
         PROFIT BY BUILDING ONLINE PRESENCE, MANAGING WEB TRAFIC AND CONNECTING WITH CUSTOMERS 24/7 ONLINE</strong></p>-->
         <div class="scroll"><img src="img/scroll.PNG" alt="scrolling"></div>
-        <div class="text_style">
-          <b>
-         We are dedicated team of developers aimed to solve any Web problems</b>
-        </div>
+        
        
       <h3>Website Packages:</h3>
       <p><strong style="color:black">1.Static Websites</strong></p>
@@ -444,7 +464,7 @@ require_once "config_mogolo.php";
 </div>
 
 <div>
-  <h3>Our Major Projects:</h3>
+  <h3>Our Recent Work:</h3>
   
   <div class="Projects" id="projects1">
     <h4> Project 1:Bitcoin Investing platform(Smart investa )</h4>
@@ -726,10 +746,10 @@ require_once "config_mogolo.php";
         </div>
         <div>
           <div class="header_footer newsletter1">Quick Links</div>
-         <p> Home</p>
-          <p>Our Work</p>
-          <p>Contact</p>
-          <p>Services</p>
+         <p> <a href="#logo_pic" style="color:white">Home</a></p>
+          <p> <a href="#projects1" style="color:white">Our Work</a></p>
+          <p><a href="#sendmessage" style="color:white">Contact</a></p>
+          <p><a href="#services" style="color:white">Services</a></p>
         </div>
 
         <div>
@@ -737,12 +757,12 @@ require_once "config_mogolo.php";
          <p> Visa</p>
           <p>Mastercard</p>
           <p>Bank EFT</p>
-          <p>Perfect Money</p>
+          <p>Paypal</p>
         </div>
 
       </div>
 <div class="copy"> Copyright 2021 &copy; Weball Technologies </div>
-<div class="copy"> Developed by Belmiro</div>
+<div class="copy"> Developed by weball team</div>
    </footer> 
 
 

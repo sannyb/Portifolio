@@ -40,9 +40,12 @@ let arr = screen.split('');
         arr1.push(base2[temp]);
         print(arr1,screen);
     }
+
     else{
-        alert("Invalid number "+ screen +" in base 2");
+        alert("Invalid number " + screen + " in base 2");
     }
+
+
     }
     else if(to === from){
         let check3 = validate(screen,from);
@@ -50,7 +53,7 @@ let arr = screen.split('');
     }
 
     else{
-        alert("Your conversion from "+ from+" to "+ to+" is not supported yet") ;
+        alert("Your conversion from "+ from+" to "+ to+" is not supported yet ") ;
     }
 
 

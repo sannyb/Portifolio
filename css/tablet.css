@@ -913,4 +913,13 @@ footer{
 
 }
 
+.services_package{
+    flex-direction: row;
+}
+
+.services_package .bg-light{
+    font-size: 1.3em;
+}
+
+
 }
