@@ -13,6 +13,7 @@
     font-family:hand_font;
     -webkit-animation:letter 1s linear;
     display:none;
+    font-weight: 40;
     color: rgb(224, 123, 6);
 }
 
@@ -350,8 +351,12 @@ border-radius: 3px;
     text-decoration: none!important;
 }
 .linear-border{
-    background-image: linear-gradient(to bottom right, rgb(194, 116, 43),rgb(175, 27, 84),rgb(241, 180, 10));
+    background-image: linear-gradient(to bottom right, rgb(101, 189, 201),rgb(2, 0, 126),rgb(255, 118, 5));
     border-radius:4px; 
+}
+.gradient-border{
+    background-image: linear-gradient(to bottom right, rgb(101, 189, 201),rgb(2, 0, 126),rgb(255, 118, 5));
+
 }
 /*End of developer login*/
 /*Animations */
@@ -490,11 +495,13 @@ footer{
     top:10em;
     border: 1px;
     color:white;
+    background-color: rgb(9, 100, 153);
 }
 .copy{
     color:white;
     position:relative;
     top:10em;
+    background-color: rgb(9, 100, 153);
 }
 .footer_body>div{
     color:white;
@@ -637,9 +644,8 @@ footer{
     }
     .choose p{
         color:white;
-        font-family: MyFont;
-        line-height: 20px;
-        font-weight: 100;
+        line-height: 24px;
+        font-weight: normal;
     }
      
 .prices .choose{
@@ -672,6 +678,14 @@ footer{
     flex-direction: row;
     width:100%;
     margin:0;
+}
+.opacity-0{
+    opacity: 0 !important;
+}
+
+
+.opacity-1{
+    opacity: 1 !important;
 }
 .greeting .left{
     background-color:black;
@@ -715,4 +729,28 @@ padding:10px;
     font-family: hand_font;
     animation:letter 1s linear;
     -webkit-animation:letter 1s linear;
+}
+.services_package{
+    display:flex;
+    margin:0px;
+    padding: 0px;
+}
+.services_package>div{
+    width:30%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 4px;
+    padding: 3px !important;
+    margin-top: 5px;
+    margin-bottom: 0px;
+}
+.services_package .bg-light{
+    border-radius: 4px;
+    height:100%;
+    margin:0px;
+    background-color: white;
+    background-image: linear-gradient(white);
+}
+.bg-light{
+    background-color: white!important;
 }

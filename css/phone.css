@@ -52,10 +52,6 @@ p{
 	color:black;
 	font-size:16px;
 }
-span{
-	font-style:italic;
-	font-size:14px;
-}
 strong{
 	font-size:13px;
 }
@@ -408,12 +404,12 @@ footer{
 }
 
 .footer_body>div{
-    width:22%;
+    width:43%;
 	font-size:10px;
 }
 
 .footer_body p{
-	font-size:10px;
+	font-size:13px;
 }
 
 .card_shadow{
@@ -1100,6 +1096,19 @@ table{
 .greeting .small_text{
     width:85%;
 
+}
+
+.services_package{
+    flex-direction: column;
+}
+
+.services_package>div{
+   width: 80% !important;
+}
+
+
+.services_package .bg-light{
+    font-size: 1.1em;
 }
 
 }
